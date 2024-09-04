@@ -3,4 +3,4 @@ Projekt
 
 Kristian Kõivastik, Mikk Reinkubjas, Silver 
 
-Matemaatika riigieksamiks valmistumine
+Teema: Matemaatika riigieksamiks valmistumine
