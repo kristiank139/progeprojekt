@@ -1,5 +1,4 @@
-# progeprojekt
-Projekt
+# MÕL (Matemaatika õppimise lehekülg)
 
 Kristian Kõivastik, Mikk Reinkubjas, Silver Nõgols
 
