@@ -1,0 +1,26 @@
+{% load latexify %}
+<!DOCTYPE html>
+<html>
+    {% include 'latexify/stylesheets.html' %}
+
+    <body>
+        <h1>Math Formulas</h1>
+        circle area: {% latexify 'A = \pi r^2' math_inline=True %}
+        circle circumference: {% latexify 'C = 2\pi r' math_inline=True %}
+        circle volume: {% latexify 'V = \frac{4}{3}\pi r^3' math_inline=True %}
+        circle surface area: {% latexify 'A = 4\pi r^2' math_inline=True %}
+        <br>
+        <br>
+        square area: {% latexify 'A = s^2' math_inline=True %}
+        square perimeter: {% latexify 'P = 4s' math_inline=True %}
+        square diagonal: {% latexify 'd = s\sqrt{2}' math_inline=True %}
+        <br>
+        <br>
+        triangle area: {% latexify 'A = \frac{1}{2}bh' math_inline=True %}
+        triangle perimeter: {% latexify 'P = a + b + c' math_inline=True %}
+        triangle hypotenuse: {% latexify 'c = \sqrt{a^2 + b^2}' math_inline=True %}
+    
+
+        {% include "latexify/scripts.html" %}
+    </body>
+</html>
