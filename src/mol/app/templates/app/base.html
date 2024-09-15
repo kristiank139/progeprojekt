@@ -1,9 +1,15 @@
 {% load latexify %}
+{% load static %}
 <!DOCTYPE html>
 <html>
     {% include 'latexify/stylesheets.html' %}
+    <head>
+        <link href="{% static './style.css' %}" rel="stylesheet"/>
+    </head>
 
     <body>
+
+        <h1 class="pealkiri">Pealkiri</h1>
         <h1>Math Formulas</h1>
         circle area: {% latexify 'A = \pi r^2' math_inline=True %}
         circle circumference: {% latexify 'C = 2\pi r' math_inline=True %}
