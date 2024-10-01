@@ -2,31 +2,134 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    {% include 'latexify/stylesheets.html' %}
-    <head>
-        <link href="{% static './style.css' %}" rel="stylesheet"/>
-    </head>
+<style>
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
 
-    <body>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
-        <h1 class="pealkiri">Pealkiri</h1>
-        <h1>Math Formulas</h1>
-        circle area: {% latexify 'A = \pi r^2' math_inline=True %}
-        circle circumference: {% latexify 'C = 2\pi r' math_inline=True %}
-        circle volume: {% latexify 'V = \frac{4}{3}\pi r^3' math_inline=True %}
-        circle surface area: {% latexify 'A = 4\pi r^2' math_inline=True %}
-        <br>
-        <br>
-        square area: {% latexify 'A = s^2' math_inline=True %}
-        square perimeter: {% latexify 'P = 4s' math_inline=True %}
-        square diagonal: {% latexify 'd = s\sqrt{2}' math_inline=True %}
-        <br>
-        <br>
-        triangle area: {% latexify 'A = \frac{1}{2}bh' math_inline=True %}
-        triangle perimeter: {% latexify 'P = a + b + c' math_inline=True %}
-        triangle hypotenuse: {% latexify 'c = \sqrt{a^2 + b^2}' math_inline=True %}
-    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
 
-        {% include "latexify/scripts.html" %}
-    </body>
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+    .flashcard-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50svh;
+    }
+    .flashcard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+        box-shadow: 1px, 1px, rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        height: 100%;
+        aspect-ratio: 1;
+
+    }
+    .prev-card, .next-card {
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+    }
+</style>
+{% include 'latexify/stylesheets.html' %}
+
+<head>
+    <link href="{% static './style.css' %}" rel="stylesheet" />
+</head>
+
+<header>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="flashcard-container" >
+        <button class="prev-card">
+            ←prev
+        </button>
+        <div class="flashcard" onclick="flipCard()">
+        <div id="flashcard-front">
+            <!--{% latexify 'A = \pi r^2' math_inline=True %}-->
+            {{küsimused.0.propertyName}}
+        </div>
+        <div id="flashcard-back" style="display: none;">
+            circle area
+        </div>
+
+        </div>
+        <button class="next-card">
+            next→
+        </button>
+        
+    </div>
+        <script>
+            let flipped = false;
+            function flipCard() {
+                flipped = !flipped;
+                if (flipped) {
+                    document.getElementById("flashcard-front").style.display = "block";
+                    document.getElementById("flashcard-back").style.display = "none";
+                }
+                else {
+                    document.getElementById("flashcard-front").style.display = "none";
+                    document.getElementById("flashcard-back").style.display = "block";
+
+                }
+
+            }
+        </script>
+    </div>
+
+
+</body>
+
 </html>
