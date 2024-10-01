@@ -99,20 +99,26 @@
         <div class="flashcard" onclick="flipCard()">
         <div id="flashcard-front">
             <!--{% latexify 'A = \pi r^2' math_inline=True %}-->
-            {{küsimused.0.propertyName}}
+            <h3 id="küsimus">{{ küsimused.0 }}</h3>
         </div>
         <div id="flashcard-back" style="display: none;">
             circle area
         </div>
 
         </div>
-        <button class="next-card">
+        <button class="next-card" onclick="next()">
             next→
         </button>
         
     </div>
         <script>
             let flipped = false;
+            let küsimus = document.getElementById("küsimus").innerHTML
+            console.log(küsimus)
+            var currentId = "{{küsimused}}".replace("[", "").replace("]", "").replace(",", "").replace(/ /g,'').split(";")
+            var id = küsimus.index(currentId)
+            console.log(id)// Praegune küsimuse id
+            console.log(currentId)
             function flipCard() {
                 flipped = !flipped;
                 if (flipped) {
@@ -124,8 +130,13 @@
                     document.getElementById("flashcard-back").style.display = "block";
 
                 }
-
             }
+
+            function next() { // Muudab küsimuse ära
+                let küsimus = document.getElementById("küsimus").innerHTML
+                küsimus.innerHTML = "{{küsimused.1}}"
+            }
+
         </script>
     </div>
 
