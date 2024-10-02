@@ -1,0 +1,38 @@
+Category;Description;Formula
+Addition/Subtraction;Additive Identity Property;{\rm{a + 0 = a}} 
+Addition/Subtraction;Additive Inverse Property;a + \left( { - a} \right) = 0 
+Addition/Subtraction;Associative Property of Addition;\left( {a + b} \right) + c = a + \left( {b + c} \right) 
+Addition/Subtraction;Commutative Property of Addition;a + b = b + a 
+Addition/Subtraction;Definition of Subtraction;a - b = a + \left( { - b} \right) 
+Division/Multiplication;Associative Property of Multiplication;\left( {a \times b} \right) \times c = a \times \left( {b \times c} \right) = a \times b \times c 
+Division/Multiplication;Definition of Division;\frac{a}{b} = a \times \left( {\frac{1}{b}} \right) 
+Division/Multiplication;Distributive Property;a\left( {b + c} \right) = ab + ac
+Division/Multiplication;Multiplicative Identity;a \times 1 = a 
+Division/Multiplication;Multiplicative Inverse;a \times \frac{1}{a} = 1 
+Division/Multiplication;Zero Multiplication Property;a \times 0 = 0 
+Exponents/Powers;Addition of Exponents Rule;x^a x^b = x^{\left( {a + b} \right)} 
+Exponents/Powers;Definition of Square Root;x^{\left( {\frac{1}{2}} \right)} = \sqrt x 
+Exponents/Powers;Distributive Property of Exponents;x^a y^a = \left( {xy} \right)^a 
+Exponents/Powers;Exponent Equal to One Rule;x^1 = x 
+Exponents/Powers;Exponent Equal to Zero Rule;x^0 = 1 
+Exponents/Powers;Fractional Exponent to Fractional Root Relationship;x^{\left( {\frac{a}{b}} \right)} = \sqrt[b]{{x^a }} 
+Exponents/Powers;Negative Exponent Definition;x^{ - a} = \frac{1}{{x^a }} 
+Exponents/Powers;Power Rule of Exponents;\left( {x^a } \right)^b = x^{\left( {ab} \right)} 
+Exponents/Powers;Subtraction of Exponents Rule;x^{\left( {a - b} \right)} = \frac{{x^a }}{{x^b }} 
+Logarithms;Definition of a Logarithm;y = \log _b \left( x \right){\rm{ iff }}x = b^y 
+Logarithms;Difference of Logarithms Property;\log _b \left( {\frac{x}{y}} \right) = \log _b \left( x \right) - \log _b \left( y \right) 
+Logarithms;Logarithm Base Conversion;\log _b \left( x \right) = \log _b \left( c \right)\log _c \left( x \right) = \frac{{\log _c \left( x \right)}}{{\log _c \left( b \right)}} 
+Logarithms;Logarithm of an Exponential;\log _b \left( {x^n } \right) = n\log _b \left( x \right) 
+Logarithms;Logarithm of One;\log _b \left( 1 \right) = 0 
+Logarithms;Logarithmic Identity Property;\log _b \left( b \right) = 1 
+Logarithms;Sum of Logarithms Property;\log _b \left( {xy} \right) = \log _b \left( x \right) + \log _b \left( y \right) 
+Polynomials;Difference of Cubes Factorization;a^3 - b^3 = \left( {a - b} \right)\left( {a^2 + ab + b^2 } \right) 
+Polynomials;Difference of Squares Factorization;a^2 - b^2 = \left( {a + b} \right)\left( {a - b} \right) 
+Polynomials;Polynomial FOIL operation;\left( {a + b} \right)\left( {c + d} \right) = ac + ad + bc + bd 
+Polynomials;Quadratic Formula;\begin{array}{*{20}c} {x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}}} & {{\rm{when}}} & {ax^2 + bx + c = 0} \\ \end{array}
+Polynomials;Second Order Polynomial Factorization;x^2 + x\left( {a + b} \right) + ab = \left( {x + a} \right)\left( {x + b} \right) 
+Polynomials;Square of a First Order Polynomial;\left( {a + b} \right)^2 = a^2 + 2ab + b^2 
+Polynomials;Sum of Cubes Factorization;a^3 + b^3 = \left( {a + b} \right)\left( {a^2 - ab + b^2 } \right) 
+Surds;SURD Addition and Subtraction;a\sqrt b \pm c\sqrt b = \left( {a \pm c} \right)\sqrt b 
+Surds;SURD Division;\frac{{a\sqrt b }}{{c\sqrt d }} = \frac{a}{c}\sqrt {\frac{b}{d}} 
+Surds;SURD Multiplication;a\sqrt b \times c\sqrt d = ac\sqrt {bd} 

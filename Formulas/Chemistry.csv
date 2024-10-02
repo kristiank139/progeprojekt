@@ -1,0 +1,53 @@
+Category;Description;Formula
+Chemistry > Equilibrium;Acid Ionization Constant;K_a = \frac{{\left[ {H^ + } \right]\left[ {A^ - } \right]}}{{\left[ {HA} \right]}}
+Chemistry > Gases. Liquids. and Solutions;Adibiatic change;PV = k
+Chemistry > Equilibrium;Base Ionization Constant;K_b = \frac{{\left[ {OH^ - } \right]\left[ {HB^ + } \right]}}{{\left[ B \right]}}
+Chemistry > Atomic Structure;Bohr Radius;a_0 = \frac{{\hbar ^2 }}{{m_e ke^2 }}
+Chemistry > Gases. Liquids. and Solutions;Boiling Point Elevation;\Delta T_b = iK_b \times molality
+Chemistry > Equilibrium;Buffer Design Equation;pH \approx pK_a - \log \frac{{\left[ {HA} \right]_0 }}{{\left[ {A^ - } \right]_0 }}
+Chemistry > Electrochemistry;Cell Voltage;E_{cell} = E^\circ _{cell} - \frac{{RT}}{{n\Im }}\ln Q = E^\circ _{cell} - \frac{{0.0592}}{n}\log Q
+Chemistry > Gases. Liquids. and Solutions;Charles' Law;\frac{V}{t} = k
+Chemistry > Gases. Liquids. and Solutions;Combined Gas Law;\frac{{P_1 V_1 }}{{n_1 T_1 }} = \frac{{P_2 V_2 }}{{n_2 T_2 }}
+Chemistry > Atomic Structure;De Broglie Wavelength;\lambda = \frac{h}{{m\upsilon }}
+Chemistry > Gases. Liquids. and Solutions;Density of a Material;D = \frac{m}{V}
+Chemistry > Electrochemistry;Electric Current;I = \frac{q}{t}
+Chemistry > Thermochemistry;Enthalpy Change;\Delta H^\circ = \sum {H^\circ _f {\rm{products}}} - \sum {H^\circ _f {\rm{reactants}}}
+Chemistry > Thermochemistry;Entropy Change;\Delta S^\circ = \sum {S^\circ {\rm{products}}} - \sum {S^\circ {\rm{reactants}}}
+Chemistry > Gases. Liquids. and Solutions;Freezing Point Depression;\Delta T_f = iK_f \times molality
+Chemistry > Equilibrium;Gas Pressure and Concentration Relationship;K_p = K_c \left( {RT} \right)^{\Delta n}
+Chemistry > Thermochemistry;Gibb's Free Energy Change Defined;\Delta G^\circ = \sum {G^\circ _f {\rm{products}}} - \sum {G^\circ _f {\rm{reactants}}}
+Chemistry > Thermochemistry;Gibb's Free Energy Change in Terms of Enthalpy. Absolute Temperature. and Entropy;\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ
+Chemistry > Thermochemistry;Gibb's Free Energy Change in Terms of Gas Constant. Absolute Temperature. and Equilibrium Constant;\Delta G^\circ = - RT\ln K = - 2.303RT\log K
+Chemistry > Thermochemistry;Gibb's Free Energy Change in Terms of Number of Moles. Faraday. and Standard Reduction Potential;\Delta G^\circ = - n\Im E^\circ
+Chemistry > Gases. Liquids. and Solutions;Graham's Law of Effusion;\frac{{r_1 }}{{r_2 }} = \sqrt {\frac{{M_2 }}{{M_1 }}}
+Chemistry > Gases. Liquids. and Solutions;Ideal gas equation;PV = nRT
+Chemistry > Equilibrium;Ion Product Constant for Water;\begin{array}{*{20}c} {K_w = \left[ {OH^ - } \right]\left[ {H^ + } \right] = K_a \times K_b } \\ {\begin{array}{*{20}c} { = 1.0 \times 10^{ - 14} } & {at} & {25^\circ C} \\ \end{array}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per Mole;\frac{{KE}}{{mole}} = \frac{3}{2}RTn
+Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per Mole;\frac{{KE}}{{mole}} = \frac{3}{2}RTn
+Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per molecule;\frac{{KE}}{{molecule}} = \frac{1}{2}m\upsilon ^2
+Chemistry > Atomic Structure;Linear Momentum;p = m\upsilon
+Chemistry > Gases. Liquids. and Solutions;Molality Defined;\begin{array}{*{20}c} {molality.} & { = \frac{{\begin{array}{*{20}c} {moles} & {solute} \\ \end{array}}}{{\begin{array}{*{20}c} {kilogram} & {solvent} \\ \end{array}}}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Molar Heat Capacity at Constant Pressure;C_p = \frac{{\Delta H}}{{\Delta T}}
+Chemistry > Gases. Liquids. and Solutions;Molarity Defined;\begin{array}{*{20}c} {molarity.} & {M = \frac{{\begin{array}{*{20}c} {moles} & {solute} \\ \end{array}}}{{\begin{array}{*{20}c} {liter} & {solution} \\ \end{array}}}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Number of Moles;n = \frac{m}{M}
+Chemistry > Gases. Liquids. and Solutions;Osmotic Pressure;\pi = \frac{{nRT}}{V}i
+Chemistry > Gases. Liquids. and Solutions;Partial Pressure of a Gas;\begin{array}{*{20}c} {P_A = P_{total} X_A } \\ {\begin{array}{*{20}c} {where} & {X_A = \frac{{\begin{array}{*{20}c} {moles} & A \\ \end{array}}}{{\begin{array}{*{20}c} {total} & {moles} \\ \end{array}}}} \\ \end{array}} \\ \end{array}
+Chemistry > Equilibrium;pH and pOH Relationship;14 = pH + pOH
+Chemistry > Equilibrium;pH Defined;pH = - \log \left[ {H^ + } \right]
+Chemistry > Equilibrium;pKa Definition;pK_a = - \log K_a
+Chemistry > Equilibrium;pKb Definition;pK_b = - \log K_b
+Chemistry > Atomic Structure;Planck's Quantized (Quantum) Energy Equation;\Delta E = h\nu
+Chemistry > Equilibrium;pOH and Base Ionization Equilibrium Constant Relationship;pOH = pK_b + \log \frac{{\left[ {HB^ + } \right]}}{{\left[ B \right]}}
+Chemistry > Equilibrium;pOH Defined;pOH = - \log \left[ {OH^ - } \right]
+Chemistry > Atomic Structure;Radii of stable orbits in the Bohr model;r = n^2 \frac{{\hbar ^2 }}{{m_e kZe^2 }} = n^2 \frac{{a_0 }}{Z}
+Chemistry > Electrochemistry;Reaction Quotient;\begin{array}{*{20}c} {Q = \frac{{\left[ C \right]^c \left[ D \right]^d }}{{\left[ A \right]^a \left[ B \right]^b }}} \\ {\begin{array}{*{20}c} {where} & {aA + bB \to cC + dD} \\ \end{array}} \\ \end{array}
+Chemistry > Atomic Structure;Relationship between Energy and Principal Quantum Number;E_n = - R_H \left( {\frac{1}{{n^2 }}} \right) = \frac{{ - 2.178 \times 10^{ - 18} }}{{n^2 }}joule
+Chemistry > Electrochemistry;Relationship between Equilibrium Constant and Cell Voltage;\log K = \frac{{nE^\circ }}{{0.0592}}
+Chemistry > Gases. Liquids. and Solutions;Root Mean Square Velocity of Gas Molecules;u_{rms} = \sqrt {\frac{{3kT}}{m}} = \sqrt {\frac{{3RT}}{M}}
+Chemistry > Atomic Structure;Rydberg Equation;\Delta E = R_H \left( {\frac{1}{{n_i ^2 }} - \frac{1}{{n_f ^2 }}} \right)
+Chemistry > Thermochemistry;Specific Heat Capacity to Heat Equation;q = mc\Delta T
+Chemistry > Atomic Structure;Speed of Light to Wavelength and Frequency Relationship;c = \lambda \nu
+Chemistry > Gases. Liquids. and Solutions;Temperature in Kelvin from Degrees Celsius Conversion;K = ^\circ C + 273
+Chemistry > Gases. Liquids. and Solutions;Total Gas Pressure as Sum of Partial Pressures;P_{total} = P_A + P_B + P_C + \ldots
+Chemistry > Gases. Liquids. and Solutions;Van der Waals equation;\left( {P + \frac{{an^2 }}{{V^2 }}} \right)\left( {V - bn} \right) = nRT
+Chemistry > Gases. Liquids. and Solutions;van't Hoff equation;\ln \left( {\frac{{K_2 }}{{K_1 }}} \right) = - \frac{{\Delta H^\circ }}{R}\left[ {\frac{1}{{T_2 }} - \frac{1}{{T_1 }}} \right]

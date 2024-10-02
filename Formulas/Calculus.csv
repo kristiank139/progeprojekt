@@ -1,0 +1,53 @@
+Category;Description;Formula
+Calculus > Sequences and Series;Arithmetic Series - Sequential Integers;\sum\limits_{k = 1}^n {k = \frac{{n\left( {n + 1} \right)}}{2}}
+Calculus > Sequences and Series;Arithmetic Series - Sequential Odd Integers;\sum\limits_{k = 1}^n {2k - 1 = n^2 }
+Calculus > Sequences and Series;Arithmetic Series - Sequential Squared Integers;\sum\limits_{k = 1}^n {k^2 = \frac{{n\left( {n + 1} \right)\left( {2n + 1} \right)}}{6}}
+Calculus > Differentiation/Differentals;Chain Rule of Differentiation;\frac{d}{{dx}}\left[ {f\left( u \right)} \right] = \frac{d}{{du}}\left[ {f\left( u \right)} \right]\frac{{du}}{{dx}}
+Calculus > Sequences and Series;Cosine Definition as an Infinite Series;\cos x = \sum\limits_{n = 0}^\infty {\frac{{\left( { - 1} \right)^n x^{2n} }}{{\left( {2n} \right)!}}}
+Calculus > Differentiation/Differentals;Definition of a Derivative;\frac{d}{{dx}}f\left( x \right) = \mathop {\lim }\limits_{\Delta \to 0} \frac{{f\left( {x + \Delta } \right) - f\left( x \right)}}{\Delta }
+Calculus > Differentiation/Differentals;Derivative of a Constant;\frac{d}{{dx}}C = 0
+Calculus > Differentiation/Differentals;Derivative of a Natural Logarithm;\frac{d}{{dx}}\ln \left( x \right) = \frac{1}{x}
+Calculus > Differentiation/Differentals;Derivative of a Variable to the First Power;\frac{d}{{dx}}x = 1
+Calculus > Differentiation/Differentals;Derivative of a Variable to the nth Power;\frac{d}{{dx}}x^n = nx^{\left( {n - 1} \right)}
+Calculus > Differentiation/Differentals;Derivative of an Arbitrary Base Exponential;\frac{d}{{dx}}b^x = b^x \ln \left( b \right)
+Calculus > Differentiation/Differentals;Derivative of an Exponential;\frac{d}{{dx}}e^{ax} = ae^{ax}
+Calculus > Differentiation/Differentals;Derivative of Cosecant;\frac{d}{{dx}}\csc x = - \csc x\cot x
+Calculus > Differentiation/Differentals;Derivative of Cosine;\frac{d}{{dx}}\cos x = - \sin x
+Calculus > Differentiation/Differentals;Derivative of Cotangent;\frac{d}{{dx}}\cot x = - \csc ^2 x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Cosecant;\frac{d}{{dx}}{\mathop{\rm csch}\nolimits} x = - \coth x{\mathop{\rm csch}\nolimits} x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Cosine;\frac{d}{{dx}}\cosh x = \sinh x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Cotangent;\frac{d}{{dx}}\coth x = 1 - \coth ^2 x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Secant;\frac{d}{{dx}}{\mathop{\rm sech}\nolimits} x = - \tanh x{\mathop{\rm sech}\nolimits} x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Sine;\frac{d}{{dx}}\sinh x = \cosh x
+Calculus > Differentiation/Differentals;Derivative of Hyperbolic Tangent;\frac{d}{{dx}}\tanh x = 1 - \tanh ^2 x
+Calculus > Differentiation/Differentals;Derivative of Inverse Cosecant (Arccosecant);\frac{d}{{dx}}arc\csc x = \frac{d}{{dx}}\csc ^{ - 1} x = \frac{{ - 1}}{{\left| x \right|\sqrt {x^2 - 1} }}
+Calculus > Differentiation/Differentals;Derivative of Inverse Cosine (Arccosine);\frac{d}{{dx}}\arccos x = \frac{d}{{dx}}\cos ^{ - 1} x = \frac{{ - 1}}{{\sqrt {1 - x^2 } }}
+Calculus > Differentiation/Differentals;Derivative of Inverse Cotangent (Arccotangent);\frac{d}{{dx}}arc\cot x = \frac{d}{{dx}}\cot ^{ - 1} x = \frac{{ - 1}}{{1 + x^2 }}
+Calculus > Differentiation/Differentals;Derivative of Inverse Secant (Arcsecant);\frac{d}{{dx}}arc\sec x = \frac{d}{{dx}}\sec ^{ - 1} x = \frac{1}{{\left| x \right|\sqrt {x^2 - 1} }}
+Calculus > Differentiation/Differentals;Derivative of Inverse Sine (Arcsine);\frac{d}{{dx}}\arcsin x = \frac{d}{{dx}}sin^{ - 1} x = \frac{1}{{\sqrt {1 - x^2 } }}
+Calculus > Differentiation/Differentals;Derivative of Inverse Tangent (Arctangent);\frac{d}{{dx}}\arctan x = \frac{d}{{dx}}\tan ^{ - 1} x = \frac{1}{{1 + x^2 }}
+Calculus > Differentiation/Differentals;Derivative of Secant;\frac{d}{{dx}}\sec x = \sec x\tan x
+Calculus > Differentiation/Differentals;Derivative of Sine;\frac{d}{{dx}}\sin x = \cos x
+Calculus > Differentiation/Differentals;Derivative of Tangent;\frac{d}{{dx}}\tan x = \sec ^2 x
+Calculus > Sequences and Series;Finite Geometric Series;\sum\limits_{k = 1}^n {ar^{k - 1} = \frac{{a\left( {1 - r^n } \right)}}{{1 - r}}}
+Calculus > Differentiation/Differentals;Fundamental Theorem for Derivatives;\frac{d}{{dx}}\int\limits_a^x {f\left( s \right)} ds = f\left( x \right)
+Calculus > Integration/Integrals;Fundamental Theorem of Integrals of Derivatives;\int\limits_a^b {\frac{d}{{dx}}F\left( x \right)dx} = F\left( b \right) - F\left( a \right)
+Calculus > Sequences and Series;Infinite Geometric Series;\sum\limits_{k = 1}^\infty {ar^{k - 1} = \frac{a}{{1 - r}}}
+Calculus > Integration/Integrals;Integral of cosecant;\int {\csc (ax)} dx = \frac{1}{a}\ln \left| {\tan \left( {\frac{{ax}}{2}} \right)} \right| + c
+Calculus > Integration/Integrals;Integral of cosine;\int {\cos (ax)} dx = \frac{1}{a}\sin (ax) + c
+Calculus > Integration/Integrals;Integral of powers not equal to -1;"\int {x^n } dx = \frac{{x^{n + 1} }}{{n + 1}}, (n \ne - 1)"
+Calculus > Integration/Integrals;Integral of reciprocal;\int {\frac{1}{x}} dx = \ln \left| x \right| + c
+Calculus > Integration/Integrals;Integral of secant;\int {\sec (ax)} dx = \frac{1}{a}\ln \left| {\tan \left( {\frac{{ax}}{2} + \frac{\pi }{4}} \right)} \right| + c
+Calculus > Integration/Integrals;Integral of sine;\int {\sin (ax)} dx = - \frac{1}{a}\cos (ax) + c
+Calculus > Integration/Integrals;Integral of tangent;\int {\tan (ax)} dx = - \frac{1}{a}\ln \left| {\cos (ax)} \right| + c
+Calculus > Integration/Integrals;Integration by parts;\int {u\frac{{dv}}{{dx}}} dx = uv - \int {\frac{{du}}{{dx}}} vdx
+Calculus > Limits;L'Hopital's Rule;\mathop {\lim }\limits_{x \to c} \frac{{f\left( x \right)}}{{g\left( x \right)}} = \mathop {\lim }\limits_{x \to c} \frac{{f'\left( x \right)}}{{g'\left( x \right)}}
+Calculus > Limits;Limit of Arctangent X as X Approaches Infinity;\mathop {\lim }\limits_{x \to \infty } \tan ^{ - 1} \left( x \right) = \frac{\pi }{2}
+Calculus > Limits;Limit of Arctangent X as X Approaches Negative Infinity;\mathop {\lim }\limits_{x \to - \infty } \tan ^{ - 1} \left( x \right) = - \frac{\pi }{2}
+Calculus > Limits;Limit of e to the X power as X Approaches Negative Infinity;\mathop {\lim }\limits_{x \to - \infty } e^x = 0
+Calculus > Limits;Limit of One over X to the nth Power;\mathop {\lim }\limits_{x \to \infty } \frac{1}{{x^n }} = 0
+Calculus > Limits;Limit of Sine X over X as X Approaches Zero;\mathop {\lim }\limits_{x \to 0} \frac{{\sin x}}{x} = 1
+Calculus > Limits;Limit of Tangent X over X as X Approaches Zero;\mathop {\lim }\limits_{x \to 0} \frac{{\tan x}}{x} = 1
+Calculus > Differentiation/Differentals;Product Rule of Differentiation;\frac{d}{{dx}}\left( {f\left( x \right)g\left( x \right)} \right) = f\left( x \right)\frac{d}{{dx}}g\left( x \right) + \frac{d}{{dx}}f\left( x \right)g\left( x \right)
+Calculus > Differentiation/Differentals;Quotient Rule of Differentiation;\frac{d}{{dx}}\left( {\frac{{f\left( x \right)}}{{g\left( x \right)}}} \right) = \frac{{\frac{d}{{dx}}f\left( x \right)g\left( x \right) - f\left( x \right)\frac{d}{{dx}}g\left( x \right)}}{{g^2 \left( x \right)}}
+Calculus > Sequences and Series;Sine Definition as an Infinite Series;\sin x = \sum\limits_{n = 1}^\infty {\frac{{\left( { - 1} \right)^{n - 1} x^{2n - 1} }}{{\left( {2n - 1} \right)!}}}

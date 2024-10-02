@@ -1,0 +1,37 @@
+Category;Description;Formula
+Trigonometry > Arbitrary Triangle;Area of Arbitrary Triangle;A = \frac{1}{2}ab\sin C
+Trigonometry > Trigonometric Definitions;Cosecant Definition for a Right Triangle;\csc \theta = \frac{{{\rm{Hypotenuse}}}}{{{\rm{Opposite Side}}}}
+Trigonometry > Trigonometric Definitions;Cosine Definition for a Right Triangle;\cos \theta = \frac{{{\rm{Adjacent Side}}}}{{{\rm{Hypotenuse}}}}
+Trigonometry > Trigonometric Definitions;Cotangent Definition for a Right Triangle;\cot \theta = \frac{{{\rm{Adjacent Side}}}}{{{\rm{Opposite Side}}}}
+Trigonometry > Trigonometric Identities;Double Angle Identity - Cosine;\cos 2\theta = \cos ^2 \theta - \sin ^2 \theta = 2\cos ^2 \theta - 1
+Trigonometry > Trigonometric Identities;Double Angle Identity - Sine;\sin 2\theta = 2\sin \theta \cos \theta
+Trigonometry > Trigonometric Identities;Euler's Formula;e^{ \pm i\theta } = \cos \theta \pm i\sin \theta
+Trigonometry > Trigonometric Properties;Even Symmetry Property - Cosine;\cos \left( { - \theta } \right) = \cos \left( \theta \right)
+Trigonometry > Trigonometric Properties;Even Symmetry Property - Cotangent;\cot \left( { - \theta } \right) = \cot \left( \theta \right)
+Trigonometry > Trigonometric Properties;Even Symmetry Property - Secant;\sec \left( { - \theta } \right) = \sec \left( \theta \right)
+Trigonometry > Trigonometric Identities;Half Angle Identity - Cosine;\cos \frac{\theta }{2} = \sqrt {\frac{{1 + \cos \theta }}{2}}
+Trigonometry > Trigonometric Identities;Half Angle Identity - Sine;\sin \frac{\theta }{2} = \sqrt {\frac{{1 - \cos \theta }}{2}}
+Trigonometry > Arbitrary Triangle;Law of Cosines;a^2 = b^2 + c^2 - 2bc\cos A
+Trigonometry > Arbitrary Triangle;Law of Sines;\frac{{\sin A}}{a} = \frac{{\sin B}}{b} = \frac{{\sin C}}{c}
+Trigonometry > Trigonometric Properties;Odd Symmetry Property - Cosecant;\csc \left( { - \theta } \right) = - \csc \left( \theta \right)
+Trigonometry > Trigonometric Properties;Odd Symmetry Property - Sine;\sin \left( { - \theta } \right) = - \sin \left( \theta \right)
+Trigonometry > Trigonometric Properties;Odd Symmetry Property - Tangent;\tan \left( { - \theta } \right) = - \tan \left( \theta \right)
+Trigonometry > Trigonometric Properties;Pythagorean Property - Cotangent and Cosecant;\cot ^2 \theta + 1 = \csc ^2 \theta
+Trigonometry > Trigonometric Properties;Pythagorean Property - Sine and Cosine;\sin ^2 \theta + \cos ^2 \theta = 1
+Trigonometry > Trigonometric Properties;Pythagorean Property - Tangent and Secant;1 + \tan ^2 \theta = \sec ^2 \theta
+Trigonometry > Trigonometric Properties;Quotient Property - Cotangent. Cosecant. and Secant;\cot \theta = \frac{{\csc \theta }}{{\sec \theta }}
+Trigonometry > Trigonometric Properties;Quotient Property - Cotangent. Cosine. and Sine;\cot \theta = \frac{{\cos \theta }}{{\sin \theta }}
+Trigonometry > Trigonometric Properties;Quotient Property - Tangent. Secant. and Cosecant;\tan \theta = \frac{{\sec \theta }}{{\csc \theta }}
+Trigonometry > Trigonometric Properties;Quotient Property - Tangent. Sine. and Cosine;\tan \theta = \frac{{\sin \theta }}{{\cos \theta }}
+Trigonometry > Trigonometric Properties;Reciprocal Property - Cosine and Secant;\sec \theta = \frac{1}{{\cos \theta }}
+Trigonometry > Trigonometric Properties;Reciprocal Property - Sine and Cosecant;\csc \theta = \frac{1}{{\sin \theta }}
+Trigonometry > Trigonometric Properties;Reciprocal Property - Tangent and Cotangent;\cot \theta = \frac{1}{{\tan \theta }}
+Trigonometry > Trigonometric Definitions;Secant Definition for a Right Triangle;\sec \theta = \frac{{{\rm{Hypotenuse}}}}{{{\rm{Adjacent Side}}}}
+Trigonometry > Trigonometric Definitions;Sine Definition for a Right Triangle;\sin \theta = \frac{{{\rm{Opposite Side}}}}{{{\rm{Hypotenuse}}}}
+Trigonometry > Trigonometric Identities;Sum and Difference of Angles Identity - Cosine;\cos \left( {\theta _1 \pm \theta _2 } \right) = \cos \theta _1 \cos \theta _2 \mp \sin \theta _1 \sin \theta _2
+Trigonometry > Trigonometric Identities;Sum and Difference of Angles Identity - Sine;\sin \left( {\theta _1 \pm \theta _2 } \right) = \sin \theta _1 \cos \theta _2 \pm \cos \theta _1 \sin \theta _2
+Trigonometry > Trigonometric Identities;Sum and Difference of Angles Identity - Tangent;\tan \left( {\theta _1 \pm \theta _2 } \right) = \frac{{\tan \theta _1 \pm \tan \theta _2 }}{{1 \mp \tan \theta _1 \tan \theta _2 }}
+Trigonometry > Trigonometric Identities;Superposition (Addition and Subtraction) of Sine of Angles;\sin \theta _1 \pm \sin \theta _2 = 2\sin \left( {\frac{{\theta _1 \pm \theta _2 }}{2}} \right)\cos \left( {\frac{{\theta _1 \mp \theta _2 }}{2}} \right)
+Trigonometry > Trigonometric Identities;Superposition (Addition) of Cosine of Angles;\cos \theta _1 + \cos \theta _2 = 2\cos \left( {\frac{{\theta _1 + \theta _2 }}{2}} \right)\cos \left( {\frac{{\theta _1 - \theta _2 }}{2}} \right)
+Trigonometry > Trigonometric Identities;Superposition (Subtraction) of Cosine of Angles;\cos \theta _1 - \cos \theta _2 = - 2\sin \left( {\frac{{\theta _1 + \theta _2 }}{2}} \right)\sin \left( {\frac{{\theta _1 - \theta _2 }}{2}} \right)
+Trigonometry > Trigonometric Definitions;Tangent Definition for a Right Triangle;\tan \theta = \frac{{{\rm{Opposite Side}}}}{{{\rm{AdjacentSide}}}}

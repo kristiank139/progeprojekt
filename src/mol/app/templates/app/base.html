@@ -98,7 +98,7 @@
         </button>
         <div class="flashcard" onclick="flipCard()">
         <div id="flashcard-front">
-            <!--{% latexify 'A = \pi r^2' math_inline=True %}-->
+            <!-- {% latexify '\tan \theta = \frac{{{\rm{Opposite Side}}}}{{{\rm{AdjacentSide}}}}' math_inline=True %} -->
             <h3 id="küsimus">{{ küsimused.0 }}</h3>
         </div>
         <div id="flashcard-back" style="display: none;">
@@ -140,7 +140,7 @@
         </script>
     </div>
 
-
+    {% include "latexify/scripts.html" %}
 </body>
 
 </html>
