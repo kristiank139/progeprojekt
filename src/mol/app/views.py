@@ -14,6 +14,12 @@ def get_questions(id): # Hakkab lugema csv failist teemale vastavad küsimused
 
         return küsimused
 
-def index(request, id):
+def flashcard(request, id):
     küsimused = get_questions(id)
-    return render(request, 'app/base.html',{"küsimused": küsimused})
+    return render(request, 'app/flashcard.html',{"küsimused": küsimused})
+
+def riigieksam(request):
+    return render(request, 'app/riigieksam.html')
+
+def index(request):
+    return render(request, 'app/home.html')

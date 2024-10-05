@@ -1,0 +1,86 @@
+{% extends 'app/base.html' %}
+{% load latexify %}
+{% load static %}
+
+{% block content %}
+<style>
+    .flashcard-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50svh;
+    }
+    .flashcard {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+        box-shadow: 1px, 1px, rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        height: 100%;
+        aspect-ratio: 1;
+
+    }
+    .prev-card, .next-card {
+        font-size: 30px;
+        border-radius: 15px;
+        background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+    }
+</style>
+
+<div class="flashcard-container" >
+    <button class="prev-card">
+        ← prev
+    </button>
+    <div class="flashcard" onclick="flipCard()">
+    <div id="flashcard-front">
+        {% latexify '\tan \theta = \frac{{{\rm{Opposite Side}}}}{{{\rm{AdjacentSide}}}}' math_inline=True %}
+        <h3 id="küsimus">{{ küsimused.0 }}</h3>
+    </div>
+    <div id="flashcard-back" style="display: none;">
+        circle area
+    </div>
+
+    </div>
+    <button class="next-card" onclick="next()">
+        next →
+    </button>
+    
+</div>
+    <script>
+        let flipped = false;
+        let küsimus = document.getElementById("küsimus").innerHTML
+        console.log(küsimus)
+        var currentId = "{{küsimused}}".replace("[", "").replace("]", "").replace(",", "").replace(/ /g,'').split(";")
+        var id = küsimus.index(currentId)
+        console.log(id)// Praegune küsimuse id
+        console.log(currentId)
+        function flipCard() {
+            flipped = !flipped;
+            if (flipped) {
+                document.getElementById("flashcard-front").style.display = "block";
+                document.getElementById("flashcard-back").style.display = "none";
+            }
+            else {
+                document.getElementById("flashcard-front").style.display = "none";
+                document.getElementById("flashcard-back").style.display = "block";
+
+            }
+        }
+
+        function next() { // Muudab küsimuse ära
+            let küsimus = document.getElementById("küsimus").innerHTML
+            küsimus.innerHTML = "{{küsimused.1}}"
+        }
+
+    </script>
+</div>
+
+{% endblock %}
