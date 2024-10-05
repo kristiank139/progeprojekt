@@ -79,84 +79,28 @@
 {% include 'latexify/stylesheets.html' %}
 <head>
     <link href="{% static './style.css' %}" rel="stylesheet" />
+
+
+    <title>Matemaatika õppimise lehekülg</title>
+    {% block head %}
+    {% endblock %}
 </head>
 
 <header>
     <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
+        <button class="dropbtn">Menüü</button>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="{% url 'flashcards' 'Calculus' %}">Flashcards</a> <!-- tuleb leida viis kuidas erinevad kategooriad valida saaks-->
+            <a href="{% url 'riigieksam' %}">Riigieksam</a>
+            <a href="{% url 'index' %}">Avaleht</a>
         </div>
     </div>
+    <div class="title">Matemaatika õppimise lehekülg</div>
 </header>
 
 <body>
-    <div class="flashcard-container">
-
-        <button class="prev-card", onclick="prev()">
-            ←prev
-        </button>
-
-        <div class="flashcard" onclick="flipCard()">
-        <div id="flashcard-front">
-            <h3 id="küsimus">{% latexify küsimused.0 math_inline=True %}</h3>
-        </div>
-
-        <div id="flashcard-back" style="display: none;">
-            circle area
-        </div>
-
-        </div>
-            <button class="next-card" onclick="next()">
-                next→
-            </button>
-        </div>
-
-        <script>
-            let flipped = false;
-            var id = 0 // id mis hakkab muutuma kui flashcarde vahetatakse
-            const values = {{ küsimused|safe }}; // näitab errorit aga tegelt töötab ilusti, ei tea - saab views.py-st dictionary, kus on flashcardi küsimused ja vastused
-
-            function flipCard() {
-                flipped = !flipped;
-                if (flipped) {
-                    document.getElementById("flashcard-front").style.display = "block";
-                    document.getElementById("flashcard-back").style.display = "none";
-                }
-                else {
-                    document.getElementById("flashcard-front").style.display = "none";
-                    document.getElementById("flashcard-back").style.display = "block";
-
-                }
-            }
-
-            // Funktsioonid flashcardide vahel liikumiseks
-            function next() { // Muudab küsimuse ära
-                if (id < Object.keys(values).length - 1) { // Kontrollib kas id ei ole viimane, kui on siis id läheb tagasi nulli ja tekib uus ring peale
-                    id += 1 
-                } else {
-                    id = 0
-                }
-                document.getElementById("küsimus").innerHTML = `{% latexify '${values[id]}' math_inline=True %}` // Muudab flashcardi teksti 
-
-                katex.render(values[id], document.getElementById("küsimus"), {
-                throwOnError: false
-                });
-            }
-
-            function prev() {
-                if (id > 0) { // Kontrollib kas id ei ole esimene, kui on siis id läheb lõppu, et tuleks viimane flashcard
-                    id -= 1 
-                } else {
-                    id = Object.keys(values).length - 1
-                }
-                document.getElementById("küsimus").innerHTML = values[id] // Muudab flashcardi teksti 
-            }
-
-        </script>
-    </div>
+    {% block content %}
+    {% endblock %}
 
     {% include "latexify/scripts.html" %}
 </body>

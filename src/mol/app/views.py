@@ -10,17 +10,17 @@ def get_questions(aine): # Hakkab lugema csv failist teemale vastavad küsimused
         küsimused = {}
         i = 0
         for rida in lugeja:
-            #if " ".join(rida)[0].isnumeric(): # Kontrollib et ei ole esimene rida
-            #    küsimused[i] = (" ".join(rida)).split(";")[1]
-            #    i += 1
             küsimused[i] = rida[2]
             i += 1
-            print(rida[2])
-
-        print(küsimused)
 
         return küsimused
 
-def index(request, aine):
+def flashcards(request, aine):
     küsimused = get_questions(aine)
-    return render(request, 'app/base.html', {"küsimused": küsimused})
+    return render(request, 'app/flashcard.html', {"küsimused": küsimused})
+
+def riigieksam(request):
+    return render(request, 'app/riigieksam.html')
+
+def index(request):
+    return render(request, 'app/home.html')
