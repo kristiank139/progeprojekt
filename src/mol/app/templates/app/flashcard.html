@@ -10,6 +10,7 @@
         justify-content: center;
         height: 50svh;
     }
+
     .flashcard {
         display: flex;
         align-items: center;
@@ -21,66 +22,103 @@
         aspect-ratio: 1;
 
     }
-    .prev-card, .next-card {
+
+    .prev-card,
+    .next-card {
         font-size: 30px;
         border-radius: 15px;
-        background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+        background-color: #04AA6D;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
 
     }
 </style>
 
-<div class="flashcard-container" >
-    <button class="prev-card">
-        ← prev
+<div class="flashcard-container">
+
+    <button class="prev-card" , onclick="prev()">
+        ←prev
     </button>
+
     <div class="flashcard" onclick="flipCard()">
-    <div id="flashcard-front">
-        {% latexify '\tan \theta = \frac{{{\rm{Opposite Side}}}}{{{\rm{AdjacentSide}}}}' math_inline=True %}
-        <h3 id="küsimus">{{ küsimused.0 }}</h3>
-    </div>
-    <div id="flashcard-back" style="display: none;">
-        circle area
-    </div>
+        <div id="flashcard-front">
+            <h3 id="küsimus">
+        </div>
+
+        <div id="flashcard-back" style="display: none;">
+
+        </div>
 
     </div>
     <button class="next-card" onclick="next()">
-        next →
+        next→
     </button>
-    
 </div>
-    <script>
-        let flipped = false;
-        let küsimus = document.getElementById("küsimus").innerHTML
-        console.log(küsimus)
-        var currentId = "{{küsimused}}".replace("[", "").replace("]", "").replace(",", "").replace(/ /g,'').split(";")
-        var id = küsimus.index(currentId)
-        console.log(id)// Praegune küsimuse id
-        console.log(currentId)
-        function flipCard() {
-            flipped = !flipped;
-            if (flipped) {
-                document.getElementById("flashcard-front").style.display = "block";
-                document.getElementById("flashcard-back").style.display = "none";
-            }
-            else {
-                document.getElementById("flashcard-front").style.display = "none";
-                document.getElementById("flashcard-back").style.display = "block";
 
-            }
+
+{% include "latexify/scripts.html" %}
+
+<script>
+    let flipped = false;
+    var id = 0// id mis hakkab muutuma kui flashcarde vahetatakse
+
+    const values = {{ küsimused | safe }};
+
+    function flipCard() {
+        flipped = !flipped;
+        if (flipped) {
+            document.getElementById("flashcard-front").style.display = "none";
+            document.getElementById("flashcard-back").style.display = "block";
         }
+        else {
+            document.getElementById("flashcard-front").style.display = "block";
+            document.getElementById("flashcard-back").style.display = "none";
 
-        function next() { // Muudab küsimuse ära
-            let küsimus = document.getElementById("küsimus").innerHTML
-            küsimus.innerHTML = "{{küsimused.1}}"
         }
+    }
 
-    </script>
+    // Funktsioonid flashcardide vahel liikumiseks
+    function next() { // Muudab küsimuse ära
+        if (id < Object.keys(values).length - 1) { // Kontrollib kas id ei ole viimane, kui on siis id läheb tagasi nulli ja tekib uus ring peale
+            id += 1
+        } else {
+            id = 0
+        }
+        displayCard()
+    }
+
+    function prev() {       // Muudab küsimuse ära  
+        if (id > 0) { // Kontrollib kas id ei ole esimene, kui on siis id läheb lõppu, et tuleks viimane flashcard
+            id -= 1
+        } else {
+            id = Object.keys(values).length - 1
+        }
+        displayCard();
+    }
+
+    function displayCard() {
+
+        flipped = true;
+        flipCard();
+        document.getElementById("küsimus").innerHTML = `${values[id].description}` // Muudab flashcardi teksti
+
+
+        katex.render(values[id].latex, document.getElementById("flashcard-back"), {
+            throwOnError: false
+        });
+    }
+
+    displayCard();
+
+
+</script>
 </div>
+
+
 
 {% endblock %}
