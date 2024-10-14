@@ -20,7 +20,6 @@
         border-radius: 15px;
         height: 100%;
         aspect-ratio: 1;
-
     }
 
     .prev-card,
@@ -39,25 +38,34 @@
     }
 </style>
 
-<div class="flashcard-container">
+<!-- Vajalikud, et Katex töötaks-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
 
+
+<div class="flashcard-container">
+    <!-- Eelmine kaart-->
     <button class="prev-card" , onclick="prev()">
         ←prev
     </button>
 
+    <!-- Flashcard -->
     <div class="flashcard" onclick="flipCard()">
+        <!-- Küsimus -->
         <div id="flashcard-front">
             <h3 id="küsimus">
         </div>
 
-        <div id="flashcard-back" style="display: none;">
-
-        </div>
-
+        <!-- Vastus -->
+        <div id="flashcard-back" style="display: none;"></div>
     </div>
+
+    <!-- Järgmine kaart -->
     <button class="next-card" onclick="next()">
         next→
     </button>
+    
 </div>
 
 
@@ -65,8 +73,8 @@
 
 <script>
     let flipped = false;
-    var id = 0// id mis hakkab muutuma kui flashcarde vahetatakse
-    
+    var id = 0 // id mis hakkab muutuma kui flashcarde vahetatakse
+
     const values = {{ küsimused | safe }};
 
     function flipCard() {
@@ -83,7 +91,7 @@
     }
 
     // Funktsioonid flashcardide vahel liikumiseks
-    function next() { // Muudab küsimuse ära
+    function next() { // Järgmine flashcard
         if (id < Object.keys(values).length - 1) { // Kontrollib kas id ei ole viimane, kui on siis id läheb tagasi nulli ja tekib uus ring peale
             id += 1
         } else {
@@ -92,7 +100,7 @@
         displayCard()
     }
 
-    function prev() {       // Muudab küsimuse ära  
+    function prev() {  // Eelmine flashcard
         if (id > 0) { // Kontrollib kas id ei ole esimene, kui on siis id läheb lõppu, et tuleks viimane flashcard
             id -= 1
         } else {
@@ -106,7 +114,8 @@
         flipped = true;
         flipCard();
         document.getElementById("küsimus").innerHTML = `${values[id].description}` // Muudab flashcardi teksti
-
+        
+        console.log(values[id].latex)
 
         katex.render(values[id].latex, document.getElementById("flashcard-back"), {
             throwOnError: false
@@ -117,8 +126,6 @@
 
 
 </script>
-</div>
-
 
 
 {% endblock %}
