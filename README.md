@@ -15,7 +15,7 @@ Figma prototüüp: https://www.figma.com/design/NycjU9DmSonCdnZszjRUjV/Untitled?
 1. Clone the repository:
     ```sh
     git clone https://github.com/kristiank139/progeprojekt.git
-    cd project-name
+    cd progeprojekt
     ```
 
 2. Install Django:
