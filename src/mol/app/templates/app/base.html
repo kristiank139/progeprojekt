@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         .dropbtn {
             background-color: #04AA6D;
             color: white;
@@ -52,7 +53,8 @@
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
-        header {
+
+        header.header {
             background-color: #f1f1f1;
             padding: 10px;
 
@@ -61,6 +63,7 @@
             justify-content: space-between;
             align-items: center;
         }
+
         .title {
             font-size: 20px;
             font-weight: bold;
@@ -72,16 +75,19 @@
     {% endblock %}
 </head>
 
-<header>
+<header class="header">
     <div class="dropdown">
         <button class="dropbtn">Menüü</button>
         <div class="dropdown-content">
-            <a href="{% url 'flashcards' 'Calculus' %}">Flashcards</a> <!-- tuleb leida viis kuidas erinevad kategooriad valida saaks-->
+            <a href="{% url 'flashcards' 'Calculus' %}">Flashcards</a>
+            <!-- tuleb leida viis kuidas erinevad kategooriad valida saaks-->
             <a href="{% url 'riigieksam' %}">Riigieksam</a>
             <a href="{% url 'index' %}">Avaleht</a>
         </div>
     </div>
     <div class="title">Matemaatika õppimise lehekülg</div>
+
+
 </header>
 
 <body>
@@ -89,6 +95,10 @@
     {% endblock %}
 
     {% include "latexify/scripts.html" %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">    </script>
+
+    {% include "app/chat.html" %}
+
 </body>
 
 </html>
