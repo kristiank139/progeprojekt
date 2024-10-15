@@ -1,0 +1,13 @@
+Calculus > Integration/Integrals;dx-i integraal;\int dx = x + C
+Calculus > Integration/Integrals;Astme integraal (aste ei ole -1);\int {x^n } dx = \frac{{x^{n + 1} }}{{n + 1}} + C, (n \ne - 1)
+Calculus > Integration/Integrals;x astmel -1 integraal;\int {x^{-1}}dx = \int\frac{{1}}{{x}}dx = \ln \left| x \right| + C
+Calculus > Integration/Integrals;x astmel -1 integraal;\int {x^{-1}}dx = \int\frac{{1}}{{x}}dx = \ln \left| x \right| + C
+Calculus > Integration/Integrals;Newtoni-Leibnizi valem;\int\limits_a^b {\frac{d}{{dx}}F\left( x \right)dx} = F\left( b \right) - F\left( a \right)
+Calculus > Integration/Integrals;1/x integraal;\int {\frac{dx}{x}} = \ln \left| x \right| + C
+Calculus > Integration/Integrals;e astmel x integraal;\int {e^{x}}dx = {e^{x}} + C
+Calculus > Integration/Integrals;a astmel x integraal;\int {a^{x}}dx = \frac{{a^{x} }}{{\ln a}} + C, (a > 0, a \ne 1)
+Calculus > Integration/Integrals;Siinuse integraal;\int {\sin (x)} dx = -\cos (x) + C
+Calculus > Integration/Integrals;Koosinuse integraal;\int {\cos (x)} dx = \sin (x) + C
+Calculus > Integration/Integrals;1 jagada cosx ruudus integraal;\int\frac{{dx}}{{\cos^{2}x}} = \tan x + C
+Calculus > Integration/Integrals;Integraali kordaja c reegel;\int c \hspace{0.1cm} f(x)dx = c\int f(x)dx
+Calculus > Integration/Integrals;Kahe funktsiooni summa/lahutise integraali reegel;\int\left[ f(x)\pm g(x) \right]dx = \int f(x)dx \hspace{0.11cm} \pm \int g(x)dx
