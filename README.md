@@ -10,6 +10,8 @@ Lühikirjeldus: Veebirakendus, millega saab ette valmistuda matemaatika riigieks
 
 Figma prototüüp: https://www.figma.com/design/NycjU9DmSonCdnZszjRUjV/Untitled?node-id=0-1&t=vNDZWrawTzXrZVWb-1
 
+**Projekti veebileht: https://riigieksam.pythonanywhere.com/**
+
 ## Installation
 
 1. Clone the repository:
