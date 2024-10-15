@@ -20,17 +20,17 @@ Chemistry > Thermochemistry;Gibb's Free Energy Change in Terms of Gas Constant. 
 Chemistry > Thermochemistry;Gibb's Free Energy Change in Terms of Number of Moles. Faraday. and Standard Reduction Potential;\Delta G^\circ = - n\Im E^\circ
 Chemistry > Gases. Liquids. and Solutions;Graham's Law of Effusion;\frac{{r_1 }}{{r_2 }} = \sqrt {\frac{{M_2 }}{{M_1 }}}
 Chemistry > Gases. Liquids. and Solutions;Ideal gas equation;PV = nRT
-Chemistry > Equilibrium;Ion Product Constant for Water;\begin{array}{*{20}c} {K_w = \left[ {OH^ - } \right]\left[ {H^ + } \right] = K_a \times K_b } \\ {\begin{array}{*{20}c} { = 1.0 \times 10^{ - 14} } & {at} & {25^\circ C} \\ \end{array}} \\ \end{array}
+Chemistry > Equilibrium;Ion Product Constant for Water;\begin{array}{cc} {K_w = \left[ {OH^ - } \right]\left[ {H^ + } \right] = K_a \times K_b } \\ {\begin{array}{cc} { = 1.0 \times 10^{ - 14} } & {at} & {25^\circ C} \\ \end{array}} \\ \end{array}
 Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per Mole;\frac{{KE}}{{mole}} = \frac{3}{2}RTn
 Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per Mole;\frac{{KE}}{{mole}} = \frac{3}{2}RTn
 Chemistry > Gases. Liquids. and Solutions;Kinetic Energy per molecule;\frac{{KE}}{{molecule}} = \frac{1}{2}m\upsilon ^2
 Chemistry > Atomic Structure;Linear Momentum;p = m\upsilon
-Chemistry > Gases. Liquids. and Solutions;Molality Defined;\begin{array}{*{20}c} {molality.} & { = \frac{{\begin{array}{*{20}c} {moles} & {solute} \\ \end{array}}}{{\begin{array}{*{20}c} {kilogram} & {solvent} \\ \end{array}}}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Molality Defined;\begin{array}{cc} {molality.} & { = \frac{{\begin{array}{cc} {moles} & {solute} \\ \end{array}}}{{\begin{array}{cc} {kilogram} & {solvent} \\ \end{array}}}} \\ \end{array}
 Chemistry > Gases. Liquids. and Solutions;Molar Heat Capacity at Constant Pressure;C_p = \frac{{\Delta H}}{{\Delta T}}
-Chemistry > Gases. Liquids. and Solutions;Molarity Defined;\begin{array}{*{20}c} {molarity.} & {M = \frac{{\begin{array}{*{20}c} {moles} & {solute} \\ \end{array}}}{{\begin{array}{*{20}c} {liter} & {solution} \\ \end{array}}}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Molarity Defined;\begin{array}{cc} {molarity.} & {M = \frac{{\begin{array}{cc} {moles} & {solute} \\ \end{array}}}{{\begin{array}{cc} {liter} & {solution} \\ \end{array}}}} \\ \end{array}
 Chemistry > Gases. Liquids. and Solutions;Number of Moles;n = \frac{m}{M}
 Chemistry > Gases. Liquids. and Solutions;Osmotic Pressure;\pi = \frac{{nRT}}{V}i
-Chemistry > Gases. Liquids. and Solutions;Partial Pressure of a Gas;\begin{array}{*{20}c} {P_A = P_{total} X_A } \\ {\begin{array}{*{20}c} {where} & {X_A = \frac{{\begin{array}{*{20}c} {moles} & A \\ \end{array}}}{{\begin{array}{*{20}c} {total} & {moles} \\ \end{array}}}} \\ \end{array}} \\ \end{array}
+Chemistry > Gases. Liquids. and Solutions;Partial Pressure of a Gas;\begin{array}{cc} {P_A = P_{total} X_A } \\ {\begin{array}{cc} {where} & {X_A = \frac{{\begin{array}{cc} {moles} & A \\ \end{array}}}{{\begin{array}{cc} {total} & {moles} \\ \end{array}}}} \\ \end{array}} \\ \end{array}
 Chemistry > Equilibrium;pH and pOH Relationship;14 = pH + pOH
 Chemistry > Equilibrium;pH Defined;pH = - \log \left[ {H^ + } \right]
 Chemistry > Equilibrium;pKa Definition;pK_a = - \log K_a
@@ -39,7 +39,7 @@ Chemistry > Atomic Structure;Planck's Quantized (Quantum) Energy Equation;\Delta
 Chemistry > Equilibrium;pOH and Base Ionization Equilibrium Constant Relationship;pOH = pK_b + \log \frac{{\left[ {HB^ + } \right]}}{{\left[ B \right]}}
 Chemistry > Equilibrium;pOH Defined;pOH = - \log \left[ {OH^ - } \right]
 Chemistry > Atomic Structure;Radii of stable orbits in the Bohr model;r = n^2 \frac{{\hbar ^2 }}{{m_e kZe^2 }} = n^2 \frac{{a_0 }}{Z}
-Chemistry > Electrochemistry;Reaction Quotient;\begin{array}{*{20}c} {Q = \frac{{\left[ C \right]^c \left[ D \right]^d }}{{\left[ A \right]^a \left[ B \right]^b }}} \\ {\begin{array}{*{20}c} {where} & {aA + bB \to cC + dD} \\ \end{array}} \\ \end{array}
+Chemistry > Electrochemistry;Reaction Quotient;\begin{array}{cc} {Q = \frac{{\left[ C \right]^c \left[ D \right]^d }}{{\left[ A \right]^a \left[ B \right]^b }}} \\ {\begin{array}{cc} {where} & {aA + bB \to cC + dD} \\ \end{array}} \\ \end{array}
 Chemistry > Atomic Structure;Relationship between Energy and Principal Quantum Number;E_n = - R_H \left( {\frac{1}{{n^2 }}} \right) = \frac{{ - 2.178 \times 10^{ - 18} }}{{n^2 }}joule
 Chemistry > Electrochemistry;Relationship between Equilibrium Constant and Cell Voltage;\log K = \frac{{nE^\circ }}{{0.0592}}
 Chemistry > Gases. Liquids. and Solutions;Root Mean Square Velocity of Gas Molecules;u_{rms} = \sqrt {\frac{{3kT}}{m}} = \sqrt {\frac{{3RT}}{M}}

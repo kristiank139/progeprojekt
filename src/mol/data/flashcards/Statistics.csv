@@ -1,10 +1,10 @@
-Statistics > Distributions;Binomial Coefficient;\left( {\begin{array}{*{20}c} n \\ k \\ \end{array}} \right) = \frac{{n!}}{{k!\left( {n - k} \right)!}}
-Statistics > Distributions;Binomial Equation;y = \frac{{n!}}{{k!\left( {n - k} \right)!}}p^k q^{n - k} = \left( {\begin{array}{*{20}c} n \\ k \\ \end{array}} \right)p^k q^{n - k}
+Statistics > Distributions;Binomial Coefficient;\left( {\begin{array}{cc} n \\ k \\ \end{array}} \right) = \frac{{n!}}{{k!\left( {n - k} \right)!}}
+Statistics > Distributions;Binomial Equation;y = \frac{{n!}}{{k!\left( {n - k} \right)!}}p^k q^{n - k} = \left( {\begin{array}{cc} n \\ k \\ \end{array}} \right)p^k q^{n - k}
 Statistics > Distributions;Euler's Constant;e = \mathop {\lim }\limits_{n \to \infty } \left( {1 + \frac{1}{n}} \right)^n
-Statistics > Moments;Fisher Skewness;\gamma _1 = \frac{{\mu _3 }}{{\mu _2 ^{{3 \mathord{\left/ {\vphantom {3 2}} \right. \kern-\nulldelimiterspace} 2}} }} = \frac{{\mu _3 }}{{\sigma ^3 }}
+Statistics > Moments;Fisher Skewness;\gamma_1 = \frac{\mu_3}{\mu_2^{3/2}} = \frac{\mu_3}{\sigma^3}
 Statistics > Distributions;Gamma Distribution;\Gamma \left( a \right) = \int\limits_0^\infty {s^{a - 1} } e^{ - s} ds
 Statistics > Distributions;Gamma Function;\Gamma \left( x \right) = \int\limits_0^\infty {s^{x - 1} e^{ - s} ds}
-Statistics > Distributions;Gaussian Normal Distribution;P(x) = \frac{1}{{\sigma \sqrt {2\pi } }}e^{{{ - \left( {x - \mu } \right)^2 } \mathord{\left/ {\vphantom {{ - \left( {x - \mu } \right)^2 } {2\sigma ^2 }}} \right. \kern-\nulldelimiterspace} {2\sigma ^2 }}}
+Statistics > Distributions;Gaussian Normal Distribution;P(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
 Statistics > Moments;Mean about zero;\mu = \mu _1 = \sum {xP\left( x \right)}
 Statistics > Distributions;Mean of Binomial Distribution;M_b = np
 Statistics > Moments;nth moment about point a;\mu _n \left( a \right) = \sum {\left( {x - a} \right)^n P\left( x \right)}
