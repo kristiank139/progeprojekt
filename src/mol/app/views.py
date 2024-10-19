@@ -3,6 +3,7 @@ from . import urls
 from django.http import HttpResponse
 from django.template import loader
 import csv
+from django.views.decorators.csrf import ensure_csrf_cookie
 
 # proovib importida API.py faili chatboti jaoks (see fail pole githubis)
 try:
@@ -31,6 +32,7 @@ def riigieksam(request):
 def index(request):
     return render(request, 'app/home.html')
 
+@ensure_csrf_cookie
 def chatRobot(request):
 
     if request.method == 'POST':

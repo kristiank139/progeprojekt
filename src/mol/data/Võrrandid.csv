@@ -1,0 +1,14 @@
+Calculus > Integration/Integrals;Taandatud ruutvõrrandi lahendivalem;-\frac{p}{2}\pm \sqrt{\left( \frac{p}{2} \right)^{2}-q}
+Calculus > Integration/Integrals;Ruutvõrrandi lahendivalem;x_{1,2}=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}
+Calculus > Integration/Integrals;Determinant;b^{2}-4ac
+Calculus > Integration/Integrals;Ruutfunktsiooni haripunkt;x_{h} = \frac{-b}{2a}
+Calculus > Integration/Integrals;Kaherealine determinant;\begin{vmatrix}a_{1}&b_{1} \\a_{2}&b_{2}\end{vmatrix} = a_{1}b_{2}-a_{2}b_{1}
+Calculus > Integration/Integrals;Kolmerealine determinant;\begin{vmatrix}a_{1}& b_{1} & c_{1} \\a_{2}& b_{2} & c_{2} \\a_{3}& b_{3} & c_{3}\end{vmatrix} = a_{1}b_{2}c_{3} + a_{2}b_{3}c_{1} + a_{3}b_{1}c_{2} - a_{3}b_{2}c_{1} - a_{2}b_{1}c_{3} - a_{1}b_{3}c_{2}
+Calculus > Integration/Integrals;Viete'i teoreem;\left\{ \begin{array}{cl}x_{1} + x_{2} = -p \\x_{1}\cdot x_{2} = q\end{array} \right.
+Calculus > Integration/Integrals;Ruutkolmliikme lahutamine teguriteks;ax^{2}+bx+c=a(x-x_{1})(x-x_{2})
+Calculus > Integration/Integrals;Tõusuga k ja algordinaadiga b määratud sirge võrrand;y=kx+b
+Calculus > Integration/Integrals;Tõusuga k ja punktiga määratud sirge võrrand;y-y_{1} = k(x-x_{1})
+Calculus > Integration/Integrals;Kahe punktiga määratud sirge võrrand;\frac{x-x_{1}}{x_{2}-x_{1}}=\frac{y-y_{1}}{y_{2}-y_{1}}
+Calculus > Integration/Integrals;Sirge tõus tõusunurgast;k=\tan\phi
+Calculus > Integration/Integrals;Punktiga ja sihivektoriga määratud sirge;\frac{x-x_{1}}{s_{1}}=\frac{y-y_{1}}{s_{2}}
+Calculus > Integration/Integrals;Ringjoone võrrand;(x-a)^{2}+(y-b)^{2}=r^{2}
