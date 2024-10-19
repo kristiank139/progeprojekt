@@ -6,6 +6,7 @@ import csv
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.conf import settings  # Import settings
 import os
+import random as r
 
 data_dir = os.path.join(settings.BASE_DIR, 'data')
 
@@ -21,12 +22,13 @@ def get_cards(aine): # Hakkab lugema csv failist teemale vastavad küsimused
     file_path = os.path.join(data_dir, 'flashcards', f'{aine}.csv')
     with open(file_path, encoding="utf-8") as f:
         lugeja = csv.reader(f, delimiter=";", quotechar='"')
-        card = []
+        cards = []
         i = 0
         for rida in lugeja:
-            card.append({"description": rida[1], "latex": rida[2]})
+            cards.append({"description": rida[1], "latex": rida[2]})
             i += 1
-        return card
+        r.shuffle(cards) # Shufflib kaardid ära, siis tulevad valemid suvaliselt
+        return cards
     
 def get_exercises():
     file_path = os.path.join(data_dir, 'riigieksam.csv')
