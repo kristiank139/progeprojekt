@@ -10,4 +10,4 @@ urlpatterns = [
     path("", views.index, name="index"),
 
     path("chatRobot", views.chatRobot, name="chatRobot"),
-] 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

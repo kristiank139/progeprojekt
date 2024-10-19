@@ -8,10 +8,13 @@
     <p>Siin lehel saad õppida matemaatikat.</p>
     <p>Vali teema:</p>
     <div class="buttons">
-
-        <a href="{% url 'flashcards' 'Chemistry' %}">
-            <button class="button">Flashcards</button>
+        {% for category in categories %}
+        <a href="{% url 'flashcards' category %}">
+            <button class="button">{{category | safe}}</button>
         </a>
+        {% endfor %}
+    </div>
+    <div class="buttons">
         <a href="{% url 'riigieksam' %}">
             <button class="button">Riigieksam</button>
         </a>
@@ -69,6 +72,5 @@
             width: 90%;
         }
     }
-
 </style>
 {% endblock %}

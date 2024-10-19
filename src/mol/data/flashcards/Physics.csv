@@ -8,13 +8,13 @@ Physics > Oscillations and Waves;Beat frequency;f = f_1 - f_2
 Physics > Electricity and Magnetism;Biot-Savart law;d{\bf{B}} = \frac{{\mu _0 }}{{4\pi }}\frac{{Id\ell \times {\bf{\hat r}}}}{{r^2 }}
 Physics > Modern Physics;Black Hole Entropy as derived by Stephen Hawking;S = \frac{{Akc^3 }}{{4\hbar G}}
 Physics > Modern Physics;Black Hole Temperature;T = \frac{{\hbar c^3 }}{{8\pi kGM}}
-Physics > Mechanics;Bulk modulus defined;B = - \frac{P}{{{{\Delta V} \mathord{\left/ {\vphantom {{\Delta V} V}} \right. \kern-\nulldelimiterspace} V}}}
-Physics > Electricity and Magnetism;Capacitance of a cylindrical capacitor;C = \frac{Q}{V} = \frac{{2\pi \varepsilon _0 L}}{{\ln \left( {{b \mathord{\left/ {\vphantom {b a}} \right. \kern-\nulldelimiterspace} a}} \right)}}
+Physics > Mechanics;Bulk modulus defined;B = - \frac{P}{\Delta V / V}
+Physics > Electricity and Magnetism;Capacitance of a cylindrical capacitor;C = \frac{Q}{V} = \frac{2\pi \varepsilon_0 L}{\ln \left( \frac{b}{a} \right)}
 Physics > Electricity and Magnetism;Capacitance of a parallel-plate capacitor;C = \frac{Q}{V} = \frac{{\varepsilon _0 A}}{s}
 Physics > Mechanics;Centripetal acceleration;a = \frac{{\upsilon ^2 }}{r}
 Physics > Electricity and Magnetism;Change in electrostatic potential energy for a point charge;\Delta U = U_b - U_a = \int_a^b {dU} = - \int_a^b {q_0 E \cdot d\ell }
 Physics > Electricity and Magnetism;Change in potential;\Delta V = V_b - V_a = \frac{{\Delta U}}{{q_0 }} = - \int_a^b {E \cdot d\ell }
-Physics > Mechanics;Compressibility;k = \frac{1}{B} = - \frac{{{{\Delta V} \mathord{\left/ {\vphantom {{\Delta V} V}} \right. \kern-\nulldelimiterspace} V}}}{P}
+Physics > Mechanics;Compressibility;k = \frac{1}{B} = - \frac{\Delta V / V}{P}
 Physics > Mechanics;Continuity equation;I_V = \upsilon A = {\rm{constant}}
 Physics > Electricity and Magnetism;Current in a conducting strip;I = nAq\upsilon _d
 Physics > Modern Physics;de Broglie wavelength;\lambda = \frac{h}{{mv}}
@@ -25,7 +25,7 @@ Physics > Oscillations and Waves;Displacement of a slightly damped oscillator;x 
 Physics > Modern Physics;Einstein's relativistic mass-energy relation;E = mc^2
 Physics > Electricity and Magnetism;Electric current;I = \frac{{\Delta Q}}{{\Delta t}} = nqA\upsilon _d
 Physics > Electricity and Magnetism;Electric field and magnetic field relationship for an electromagnetic wave;E = cB
-Physics > Electricity and Magnetism;Electric field on the axis of a ring charge;E_x = \frac{{kQx}}{{\left( {x^2 + a^2 } \right)^{{3 \mathord{\left/ {\vphantom {3 2}} \right. \kern-\nulldelimiterspace} 2}} }}
+Physics > Electricity and Magnetism;Electric field on the axis of a ring charge;E_x = \frac{kQx}{(x^2 + a^2)^{3/2}}
 Physics > Electricity and Magnetism;Electric flux defined;\phi = \int_S {{\bf{E}} \cdot {\bf{\hat n}}dA}
 Physics > Electricity and Magnetism;EMF (Electromotive Force) defined;\xi = \oint_C {E \cdot d\ell }
 Physics > Oscillations and Waves;Energy change in a damped oscillation;\frac{{\Delta E}}{E} = - \frac{b}{m}T
@@ -61,7 +61,7 @@ Physics > Electricity and Magnetism;Resistance;R = \frac{L}{{\sigma A}} = \frac{
 Physics > Modern Physics;Rydberg constant;R = \frac{{m_e k^2 e^4 }}{{4\pi c\hbar ^3 }}
 Physics > Modern Physics;Schwarzschild Black Hole Radius;R = \frac{{2GM}}{{c^2 }}
 Physics > Electricity and Magnetism;Self inductance of a solenoid;L = \frac{{\phi _m }}{I} = \mu _0 n^2 A\ell
-Physics > Mechanics;Shear modulus defined;M_S = \frac{{{{F_S } \mathord{\left/ {\vphantom {{F_S } A}} \right. \kern-\nulldelimiterspace} A}}}{{{{\Delta x} \mathord{\left/ {\vphantom {{\Delta x} L}} \right. \kern-\nulldelimiterspace} L}}} = \frac{{{{F_S } \mathord{\left/ {\vphantom {{F_S } A}} \right. \kern-\nulldelimiterspace} A}}}{{{\rm{tan}}\theta }} = \frac{{{\rm{Shear Stress}}}}{{{\rm{Shear Strain}}}}
+Physics > Mechanics;Shear modulus defined;M_S = \frac{\frac{F_S}{A}}{\frac{\Delta x}{L}} = \frac{\frac{F_S}{A}}{\tan \theta} = \frac{\text{Shear Stress}}{\text{Shear Strain}}
 Physics > Mechanics;Shear stress;{\rm{Shear Stress = }}\frac{{{\rm{F}}_{\rm{S}} }}{{\rm{A}}}
 Physics > Mechanics;simple harmonic motion acceleration;a = - \omega ^2 x = - \omega ^2 r\sin (\omega t)
 Physics > Optics;single-slit diffraction pattern points of zero intensity;a\sin \theta = m\lambda
@@ -83,6 +83,6 @@ Physics > Oscillations and Waves;Velocity at resonance frequency of a driven osc
 Physics > Mechanics;Viscous flow;F = \eta \frac{{\upsilon A}}{z}
 Physics > Electricity and Magnetism;Voltage equation;V = IR
 Physics > Electricity and Magnetism;Wave equation for magnetic field;\frac{{\partial ^2 B}}{{\partial x^2 }} = \frac{1}{{c^2 }}\frac{{\partial ^2 B}}{{\partial t^2 }}
-Physics > Mechanics;Young's modulus;\Upsilon = \frac{{{F \mathord{\left/ {\vphantom {F A}} \right. \kern-\nulldelimiterspace} A}}}{{{{\Delta L} \mathord{\left/ {\vphantom {{\Delta L} L}} \right. \kern-\nulldelimiterspace} L}}} = \frac{{{\rm{Stress}}}}{{{\rm{Strain}}}}
+Physics > Mechanics;Young's modulus;\Upsilon = \frac{\frac{F}{A}}{\frac{\Delta L}{L}} = \frac{\text{Stress}}{\text{Strain}}
 Physics > Electricity and Magnetism;Yukawa Potential;V = \frac{{V_\theta e^{ - kr} }}{r}
 Physics;Zurich sunspot number;R = k(f + 10g)

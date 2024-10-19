@@ -1,6 +1,5 @@
 {% extends 'app/base.html' %}
 {% load latexify %}
-{% load static %}
 
 {% block content %}
 <style>
@@ -57,8 +56,12 @@
             <h3 id="küsimus">
         </div>
 
-        <!-- Vastus -->
-        <div id="flashcard-back" style="display: none;"></div>
+        <div id="flashcard-back" style="display: none;">
+            <h3 id="vastus">
+        </div>
+
+        
+
     </div>
 
     <!-- Järgmine kaart -->
@@ -68,14 +71,46 @@
     
 </div>
 
+<button onclick="showall()">Show all (debug)
+</button>
+<div id="all" style="display: none;"></div>
 
 {% include "latexify/scripts.html" %}
 
 <script>
+
+    function showall(){
+        if (all.style.display === "none") {
+            all.style.display = "block";
+        } else {
+            all.style.display = "none";
+        }
+
+    }
     let flipped = false;
     var id = 0 // id mis hakkab muutuma kui flashcarde vahetatakse
 
     const values = {{ küsimused | safe }};
+
+    all = document.getElementById("all");
+
+    for (value in values) {
+
+        let küsimus = document.createElement("div")
+        let vastus = document.createElement("div")
+        küsimus.innerHTML = values[value].description
+        vastus.innerHTML = values[value].latex
+
+        katex.render(values[value].latex, vastus, {
+            throwOnError: false,
+            output: "mathml"
+        }
+        );
+        all.appendChild(küsimus)
+        all.appendChild(vastus)
+
+    }
+
 
     function flipCard() {
         flipped = !flipped;
@@ -111,14 +146,15 @@
 
     function displayCard() {
 
-        flipped = true;
+        flipped = false;
         flipCard();
         document.getElementById("küsimus").innerHTML = `${values[id].description}` // Muudab flashcardi teksti
         
-        console.log(values[id].latex)
 
-        katex.render(values[id].latex, document.getElementById("flashcard-back"), {
-            throwOnError: false
+
+        katex.render(values[id].latex, document.getElementById("vastus"), {
+            throwOnError: false,
+            output: "mathml"
         });
     }
 

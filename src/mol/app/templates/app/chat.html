@@ -1,7 +1,8 @@
 {% load static %}
-<div class="chat" style="position: absolute; right: 0; top: 0; width: 300px; height: 100%;">
+{% csrf_token %}
+<div class="chat" style="position: fixed; right: 0; top: 0; height: 100%;">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'w3.css' %}">
+    <link rel="stylesheet" href="{% static 'sidebar.css' %}">
     <!-- Add this script tag in the head or appropriate place in your HTML -->
     <style>
         ul li.ai {
@@ -14,18 +15,18 @@
     </style>
 
 
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
-        <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">&times;</button>
-        <ul id="chatLog" class="w3-bar-item ">
+    <div class="side-sidebar side-bar-block side-card side-animate-right" style="display:none;right:0;" id="rightMenu">
+        <button onclick="closeRightMenu()" class="side-bar-item side-button side-large">&times;</button>
+        <ul id="chatLog" class="side-bar-item ">
             <li class="ai">Tere! Olen PIA. Aitan teid kui vaja :)</li>
         </ul>
-        <p2 class="w3-bar-item "><input id="prompt" type="text"> <button id="sendPromptButton">Send</button></p2>
+        <p2 class="side-bar-item "><input id="prompt" type="text"> <button id="sendPromptButton">Send</button></p2>
     </div>
 
-    <div class="w3-teal">
+    <div class="side-teal">
 
-        <button class="w3-button w3-teal w3-xlarge w3-right" style="position: absolute; bottom: 0; right: 0;" onclick="openRightMenu()"><img src="{% static 'PIA.png' %}"
-                width="50" height="50"></button>
+        <button class="side-button side-teal side-xlarge side-right" style="position: absolute; bottom: 0; right: 0;"
+            onclick="openRightMenu()"><img src="{% static 'PIA.png' %}" width="50" height="50"></button>
     </div>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 
@@ -33,6 +34,7 @@
 
 
     <script>
+
         function openRightMenu() {
             document.getElementById("rightMenu").style.display = "block";
         }
@@ -54,11 +56,16 @@
                 if (this.readyState == 4 && this.status == 200) {
                     console.log(this.responseText);
 
-                    var entry = document.createElement("zero-md");
+                    var entry = document.createElement("li");
+                    var entry2 = document.createElement("zero-md");
+                    entry.appendChild(entry2);
 
 
                     let mdText = encodeURIComponent(this.responseText);
-                    entry.src = "data:text/markdown;charset=utf-8," + mdText;
+
+    
+                    entry2.setAttribute("src", "data:text/markdown;charset=utf-8," + mdText);
+
                     document.getElementById("chatLog").appendChild(entry);
 
                 }
@@ -84,11 +91,7 @@
                     console.log("enter");
                 }
             });
-
-
         });
-
-
 
     </script>
 

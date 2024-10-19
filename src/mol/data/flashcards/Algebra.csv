@@ -28,7 +28,7 @@ Logarithms;Sum of Logarithms Property;\log _b \left( {xy} \right) = \log _b \lef
 Polynomials;Difference of Cubes Factorization;a^3 - b^3 = \left( {a - b} \right)\left( {a^2 + ab + b^2 } \right) 
 Polynomials;Difference of Squares Factorization;a^2 - b^2 = \left( {a + b} \right)\left( {a - b} \right) 
 Polynomials;Polynomial FOIL operation;\left( {a + b} \right)\left( {c + d} \right) = ac + ad + bc + bd 
-Polynomials;Quadratic Formula;\begin{array}{*{20}c} {x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}}} & {{\rm{when}}} & {ax^2 + bx + c = 0} \\ \end{array}
+Polynomials;Quadratic Formula;\begin{array}{cc} {x = \frac{{ - b \pm \sqrt {b^2 - 4ac} }}{{2a}}} & {{\rm{when}}} & {ax^2 + bx + c = 0} \\ \end{array}
 Polynomials;Second Order Polynomial Factorization;x^2 + x\left( {a + b} \right) + ab = \left( {x + a} \right)\left( {x + b} \right) 
 Polynomials;Square of a First Order Polynomial;\left( {a + b} \right)^2 = a^2 + 2ab + b^2 
 Polynomials;Sum of Cubes Factorization;a^3 + b^3 = \left( {a + b} \right)\left( {a^2 - ab + b^2 } \right) 

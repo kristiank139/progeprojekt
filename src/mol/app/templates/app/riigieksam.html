@@ -4,8 +4,9 @@
 
 {% block content %}
 <div class="Eksami_leht">
-    <h1>Riigi eksami ül</h1>
-    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+    <h1 id="eksami-pealkiri">Riigieksam</h1>
+    <p id="eksami-yl">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+        classical Latin
         literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
         Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
         Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
@@ -17,13 +18,76 @@
         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
         1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
         original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+    <div id="solution" style="display: none;">
+        <div class="solution-text"></div>
+        <img src="" alt="" class="eksami-img"  width="100%" height="100%">
+    </div>
 </div>
 
 <div class="ETV">
-    <button onclick="" class="button"><span> Tagasi </span></button>
-    <button onclick="" class="button"><span> Lahenduskäik </span></button>
-    <button onclick="" class="button"><span> Edasi </span></button>
+    <button onclick="prev()" class="button"><span> Tagasi </span></button>
+    <button onclick="toggleSolution()" class="button"><span> Lahenduskäik </span></button>
+    <button onclick="next()" class="button"><span> Edasi </span></button>
 </div>
+
+
+<script>
+    // [{text,solution,image}]
+    const exercises = {{ exercises | safe }};
+    let id = 0;
+    let showSolution = false;
+
+
+    function displayExercise() {
+
+        showSolution = true;
+        toggleSolution();
+        document.getElementById("eksami-pealkiri").innerText = `${exercises[id].name}` // Muudab flashcardi pealkirja
+
+        // find \n and replace with <br>${exercises[id].text}
+        document.getElementById("eksami-yl").innerHTML = exercises[id].text.replaceAll('\\n', '<br>') // Muudab flashcardi teksti
+        
+        document.getElementsByClassName("solution-text")[0].innerText = `{% static 'images/' %}${exercises[id].solutionImage}` // Muudab flashcardi teksti
+        document.getElementsByClassName("eksami-img")[0].src = `{% static 'images/' %}${exercises[id].solutionImage}` // Muudab flashcardi teksti
+
+    }
+
+    function toggleSolution() {
+        var x = document.getElementById("solution");
+        if (showSolution) {
+            
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        showSolution = !showSolution;
+    }
+
+    // Funktsioonid flashcardide vahel liikumiseks
+    function next() { // Muudab küsimuse ära
+        if (id < Object.keys(exercises).length - 1) { // Kontrollib kas id ei ole viimane, kui on siis id läheb tagasi nulli ja tekib uus ring peale
+            id += 1
+        } else {
+            id = 0
+        }
+        displayExercise()
+    }
+
+    function prev() {       // Muudab küsimuse ära  
+        if (id > 0) { // Kontrollib kas id ei ole esimene, kui on siis id läheb lõppu, et tuleks viimane flashcard
+            id -= 1
+        } else {
+            id = Object.keys(exercises).length - 1
+        }
+        displayExercise();
+    }
+
+
+
+    displayExercise();
+
+</script>
 {% endblock %}
 
 {% block head %}
@@ -80,7 +144,4 @@
         }
     }
 </style>
-
-
-
 {% endblock %}
