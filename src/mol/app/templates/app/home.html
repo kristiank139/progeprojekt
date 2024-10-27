@@ -27,20 +27,33 @@
 {% block head %}
 <style>
     .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        min-height: 50vh;
+        max-width: 800px;
+        margin: 5vh auto;
+        padding: 3vh;
         background-color: rgb(235, 229, 229);
-        padding: 2vh;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 2.2em;
+        margin-bottom: 1vh;
+    }
+
+    p {
+        color: #555;
+        font-size: 1.1em;
+        margin-bottom: 3vh;
     }
 
     .buttons {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin-top: 2vh;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
     }
+
 
     button {
         padding: 15px 25px;
