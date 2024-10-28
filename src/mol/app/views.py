@@ -38,7 +38,7 @@ def get_exercises():
         i = 0
         for rida in lugeja:
             print(rida)
-            exercises.append({"name": rida[0], "text": rida[1], "solutionImage": rida[2]})
+            exercises.append({"name": rida[0], "text": rida[1], "figure": rida[2], "solutionImage": rida[3]})
             i += 1
         return exercises
 

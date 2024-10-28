@@ -8,6 +8,8 @@
         align-items: center;
         justify-content: center;
         height: 50svh;
+        flex-direction: column;
+
     }
 
     .flashcard {
@@ -18,7 +20,8 @@
         box-shadow: 1px, 1px, rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         height: 100%;
-        aspect-ratio: 1;
+        min-width: 50%;
+        width: fit-content;
     }
 
     .prev-card,
@@ -35,20 +38,29 @@
         display: inline-block;
 
     }
-</style>
 
-<!-- Vajalikud, et Katex töötaks-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+    .ETV2 {
+        display: flex;
+        width: 55%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+    }
+
+    button:active {
+        background-color: #039861;
+        transform: translateY(2px);
+    }
+
+    button:hover {
+        background-color: #039861
+    }
+</style>
 
 
 <div class="flashcard-container">
-    <!-- Eelmine kaart-->
-    <button class="prev-card" , onclick="prev()">
-        ←prev
-    </button>
-
     <!-- Flashcard -->
     <div class="flashcard" onclick="flipCard()">
         <!-- Küsimus -->
@@ -60,18 +72,20 @@
             <h3 id="vastus">
         </div>
 
-        
-
+    </div>
+    <div class="ETV2">
+        <button class="prev-card" , onclick="prev()">
+            ←prev
+        </button>
+        <button class="next-card" onclick="next()">
+            next→
+        </button>
     </div>
 
-    <!-- Järgmine kaart -->
-    <button class="next-card" onclick="next()">
-        next→
-    </button>
-    
+
 </div>
 
-<button onclick="showall()">Show all (debug)
+<button onclick="showall()">Vaata kõiki valemeid
 </button>
 <div id="all" style="display: none;"></div>
 
@@ -79,7 +93,7 @@
 
 <script>
 
-    function showall(){
+    function showall() {
         if (all.style.display === "none") {
             all.style.display = "block";
         } else {
@@ -149,7 +163,7 @@
         flipped = true;
         flipCard();
         document.getElementById("küsimus").innerHTML = `${values[id].description}` // Muudab flashcardi teksti
-        
+
 
 
         katex.render(values[id].latex, document.getElementById("vastus"), {
