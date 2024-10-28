@@ -1,0 +1,17 @@
+Trigonometry > Arbitrary Triangle;Area of Arbitrary Triangle;A = \frac{1}{2}ab\sin C
+Trigonometry > Trigonometric Definitions;Koosinus täisnurkse kolmnurkade külgedest;\cos \alpha = \frac{b}{c}
+Trigonometry > Trigonometric Definitions;Siinus täisnurkse kolmnurkade külgedest;\sin \alpha = \frac{a}{c}
+Trigonometry > Trigonometric Definitions;Tangens täisnurkse kolmnurkade külgedest;\tan \alpha = \frac{a}{b}
+Trigonometry > Trigonometric Definitions;Siinuse ruudu ja koosinuse ruudu summa;\sin^{2}\alpha + \cos^{2}\alpha = 1
+Trigonometry > Trigonometric Identities;Tangens ruudus + 1 summa;1 + \tan^{2}\alpha = \frac {1}{\cos^{2}\alpha}
+Trigonometry > Trigonometric Identities;Siinus negatiivsest nurgast;\sin (-\alpha) = -\sin \alpha
+Trigonometry > Trigonometric Identities;Koosinus negatiivsest nurgast;\cos (-\alpha) = \cos \alpha
+Trigonometry > Trigonometric Identities;Tangens negatiivsest nurgast;\tan (-\alpha) = -\tan \alpha
+Trigonometry > Arbitrary Triangle;Koosinusteoreem;a^2 = b^2 + c^2 - 2bc\cos \alpha
+Trigonometry > Arbitrary Triangle;Siinusteoreem;\frac{a}{{\sin \alpha}} = \frac{b}{{\sin \beta}} = \frac{c}{{\sin \gamma}}
+Trigonometry > Trigonometric Identities;Koosinus nurkade summa ja vahe;\cos \left( {\alpha \pm \beta } \right) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta
+Trigonometry > Trigonometric Identities;Siinuse nurkade summa ja vahe;\sin \left( {\alpha \pm \beta } \right) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta
+Trigonometry > Trigonometric Identities;Tangens nurkade summa ja vahe;\tan \left( {\alpha \pm \beta } \right) = \frac{{\tan \alpha\pm \tan \beta }}{{1 \mp \tan \alpha \tan \beta }}
+Trigonometry > Trigonometric Identities;Kahekordse nurga siinus;\sin 2\alpha = 2\sin \alpha \cos \alpha
+Trigonometry > Trigonometric Identities;Kahekordse nurga koosinus;\cos 2\alpha = \cos^{2}\alpha - \sin^{2}\alpha
+Trigonometry > Trigonometric Identities;Kahekordse nurga tangens;\tan 2\alpha = \frac{{2\tan \alpha }}{{1 - \tan^{2}\alpha}}

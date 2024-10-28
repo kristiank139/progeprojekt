@@ -1,51 +1,28 @@
-Geometry > Length/Perimeter;Arclength;s = r\theta
-Geometry > Area;Area of a circle;A = \pi r^2
-Geometry > Area;Area of a parallelogram;A = bh
-Geometry > Area;Area of a rectangle;A = lw
-Geometry > Area;Area of a regular polygon;A = \frac{{nsr}}{2} = \frac{{pr}}{2}
-Geometry > Area;Area of a rhombus;A = \frac{{x_1 x_2 }}{2}
-Geometry > Area;Area of a sector;A = \frac{{\theta r^2 }}{2}
-Geometry > Area;Area of a square;A = x^2
-Geometry > Area;Area of a trapezoid;A = \frac{1}{2}(x_1 + x_2 )h
-Geometry > Area;Area of a triangle;A = \frac{1}{2}bh
-Geometry > Area;Area of an ellipse;A = \pi r_1 r_2
-Geometry > Area;Area of an equilateral triangle;A = \frac{{h^2 \sqrt 3 }}{3}
-Geometry > Coordinate Systems;Cartesian to Cylindrical Coordinates (3-D);\begin{array}{cc} {x = r\cos \theta } & {r = \sqrt {x^2 + y^2 } } & {} \\ {y = r\sin \theta } & {\theta = \tan ^{ - 1} \left( {\frac{y}{x}} \right)} & {} \\ {z = z} & {z = z} & {} \\ \end{array}
-Geometry > Coordinate Systems;Cartesian to Polar Coordinates (2-D);\begin{array}{cc} {x = r\cos \theta } & {r = \sqrt {x^2 + y^2 } } \\ {y = r\sin \theta } & {\theta = \tan ^{ - 1} \left( {\frac{y}{x}} \right)} \\ \end{array}
-Geometry > Coordinate Systems;Cartesian to Spherical Coordinates (3-D);\begin{array}{cc} {x = R\sin \theta \cos \phi } & {R = \sqrt {x^2 + y^2 + z^2 } } & {} \\ {y = R\sin \theta \sin \phi } & {\phi = \tan ^{ - 1} \left( {\frac{y}{x}} \right)} & {} \\ {z = R\cos \theta } & {\theta = \cos ^{ - 1} \left( {\frac{z}{{\sqrt {x^2 + y^2 + z^2 } }}} \right)} & {} \\ \end{array}
-Geometry > Coordinate Systems;Cylindrical to Spherical Coordinates (3-D);\begin{array}{cc} {r = R\sin \theta } & {R = \sqrt {r^2 + z^2 } } & {} \\ {z = R\sin \theta } & {\phi = \theta } & {} \\ {\theta = \phi } & {\theta = \tan ^{ - 1} \left( {\frac{r}{z}} \right)} & {} \\ \end{array}
-Geometry > Curves and Shapes;Distance Between Two Points (2-D);d = \sqrt {\left( {x_1 - x_2 } \right)^2 + \left( {y_1 - y_2 } \right)^2 }
-Geometry > Curves and Shapes;Distance Between Two Points (3-D);d = \sqrt {\left( {x_1 - x_2 } \right)^2 + \left( {y_1 - y_2 } \right)^2 + \left( {z_1 - z_2 } \right)^2 }
-Geometry > Curves and Shapes;Eccentricity of a Hyperbola;\varepsilon = \frac{{\sqrt {a^2 + b^2 } }}{a}
-Geometry > Curves and Shapes;Eccentricity of an Ellipse;\varepsilon = \frac{{\sqrt {a^2 - b^2 } }}{a}
-Geometry > Curves and Shapes;Equation of a Circle;\left( {x - x_0 } \right)^2 + \left( {y - y_0 } \right)^2 = R^2
-Geometry > Curves and Shapes;Equation of a Hyperbola;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} - \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = 1
-Geometry > Curves and Shapes;Equation of a Hyperbolic Paraboloid;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} - \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = \frac{{\left( {z - z_0 } \right)}}{c}
-Geometry > Curves and Shapes;Equation of a Hyperboloid of One Sheet;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} - \frac{{\left( {z - z_0 } \right)^2 }}{{c^2 }} = 1
-Geometry > Curves and Shapes;Equation of a Hyperboloid of Two Sheets;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} - \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} - \frac{{\left( {z - z_0 } \right)^2 }}{{c^2 }} = 1
-Geometry > Curves and Shapes;Equation of a Line;y = mx + b
-Geometry > Curves and Shapes;Equation of a Parabola;\left( {y - y_0 } \right)^2 = 4a\left( {x - x_0 } \right)
-Geometry > Curves and Shapes;Equation of a Plane;Ax + By + Cz + D = 0
-Geometry > Curves and Shapes;Equation of a Sphere;\left( {x - x_0 } \right)^2 + \left( {y - y_0 } \right)^2 + \left( {z - z_0 } \right)^2 = R^2
-Geometry > Curves and Shapes;Equation of an Ellipse;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = 1
-Geometry > Curves and Shapes;Equation of an Ellipsoid;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} + \frac{{\left( {z - z_0 } \right)^2 }}{{c^2 }} = 1
-Geometry > Curves and Shapes;Equation of an Elliptic Cone;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = \frac{{\left( {z - z_0 } \right)^2 }}{{c^2 }}
-Geometry > Curves and Shapes;Equation of an Elliptic Cylinder;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = 1
-Geometry > Curves and Shapes;Equation of an Elliptic Paraboloid;\frac{{\left( {x - x_0 } \right)^2 }}{{a^2 }} + \frac{{\left( {y - y_0 } \right)^2 }}{{b^2 }} = \frac{{\left( {z - z_0 } \right)}}{c}
-Geometry > Length/Perimeter;Perimeter of a Circle;P = 2\pi r
-Geometry > Length/Perimeter;Perimeter of a Rectangle;P = 2l + 2w
-Geometry > Length/Perimeter;Perimeter of a Regular Polygon;P = ns
-Geometry > Length/Perimeter;Perimeter of a Square;P = 4s
-Geometry > Length/Perimeter;Perimeter of a Triangle;P = a + b + c
-Geometry > Curves and Shapes;Spiral of Archimedes (Archimedean Spiral) in Polar Coordinates;r = a\theta
-Geometry > Area;Surface area of a cube;S = 6x^2
-Geometry > Area;Surface area of a cuboid;S = 2lw + 2lh + 2wh
-Geometry > Area;Surface area of a cylinder;S = 2\pi r^2 + 2\pi rh
-Geometry > Area;Surface area of a sphere;S = 4\pi r^2
-Geometry > Volume;Volume of a cone;V = \frac{{Bh}}{3} = \frac{{\pi r^2 h}}{3}
-Geometry > Volume;Volume of a cube;V = x^3
-Geometry > Volume;Volume of a cuboid;V = lhw
-Geometry > Volume;Volume of a cylinder;V = Bh = \pi r^2 h
-Geometry > Volume;Volume of a prism;V = Bh
-Geometry > Volume;Volume of a pyramid;V = \frac{{Bh}}{3}
-Geometry > Volume;Volume of a sphere;V = \frac{{4\pi r^3 }}{3}
+Geometry > Length/Perimeter;Kaare pikkus;l = \alpha r \hspace{0.11cm} (radiaanides)
+Geometry > Area;Ringi pindala;S = \pi r^2
+Geometry > Area;Ristküliku pindala;S = ab
+Geometry > Area;Korrapärase hulknurga pindala;S = \frac{{nar}}{2}
+Geometry > Area;Rombi pindala;S = \frac{{d_1 d_2 }}{2}
+Geometry > Area;Sektori pindala;S = \frac{{\alpha r^2 }}{2} \hspace{0.11cm} (radiaanides)
+Geometry > Area;Ruudu pindala;S = a^2
+Geometry > Area;Trapetsi pindala;S = \frac{a + b}{2} \cdot h
+Geometry > Area;Kolmnurga pindala;S = \frac{ah}{2}
+Geometry > Area;Võrdkülgse kolmnurga pindala;S = \frac{{a^2 \sqrt 3 }}{4}
+Geometry > Curves and Shapes;Kahe punkti vaheline kaugus tasandil;d = AB = \sqrt {\left( {x_1 - x_2 } \right)^2 + \left( {y_1 - y_2 } \right)^2 }
+Geometry > Curves and Shapes;Kahe punkti vaheline kaugus ruumis;d = AB = \sqrt {\left( {x_1 - x_2 } \right)^2 + \left( {y_1 - y_2 } \right)^2 + \left( {z_1 - z_2 } \right)^2 }
+Geometry > Length/Perimeter;Ringi ümbermõõt;P = 2\pi r
+Geometry > Length/Perimeter;Ristküliku ümbermõõt;P = 2(a + b)
+Geometry > Length/Perimeter;Korrapärase hulknurga ümbermõõt;P = na
+Geometry > Length/Perimeter;Ruudu ümbermõõt;P = 4a
+Geometry > Length/Perimeter;Kolmnurga ümbermõõt;P = a + b + c
+Geometry > Area;Kuubi pindala;S = 6a^2
+Geometry > Area;Risttahuka pindala;S = 2(ab + ac + bc)
+Geometry > Area;Silindri pindala;S = 2\pi r(h + r)
+Geometry > Area;Kera pindala;S = 4\pi R^2
+Geometry > Volume;Koonuse ruumala;V = \frac{{Bh}}{3} = \frac{{\pi r^2 h}}{3}
+Geometry > Volume;Kuubi ruumala;V = x^3
+Geometry > Volume;Risttahuka ruumala;V = lhw
+Geometry > Volume;Silindri ruumala;V = Bh = \pi r^2 h
+Geometry > Volume;Prisma ruumala;V = Bh
+Geometry > Volume;Püramiidi ruumala;V = \frac{{Bh}}{3}
+Geometry > Volume;Kera ruumala;V = \frac{{4\pi r^3 }}{3}
