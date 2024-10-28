@@ -8,10 +8,10 @@
 <div class="Eksami_leht">
     <h1 id="eksami-pealkiri">Riigieksam</h1>
     <p id="eksami-yl"></p>
-
+    <img src="" alt="" id="eksami-figure">
     <div id="solution" style="display: none;">
         <div class="solution-text"></div>
-        <img src="" alt="" class="eksami-img" width="100%" height="100%">
+        <img src="" alt="" id="eksami-solution" width="100%" height="100%">
     </div>
 </div>
 
@@ -38,19 +38,22 @@
 
         // Katex renderdamine
         renderMathInElement(document.getElementById("eksami-yl"), {
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '\\[', right: '\\]', display: true }
+            ],
 
-          throwOnError : false
+            throwOnError: false
 
         });
-
-        document.getElementsByClassName("eksami-img")[0].src = `{% static 'images/' %}${exercises[id].solutionImage}` // Muudab flashcardi teksti
-
+        if (exercises[id].figure != "") {
+            document.getElementById("eksami-figure").src = `{% static 'images/' %}${exercises[id].figure}` // Muudab flashcardi teksti
+        }
+        if (exercises[id].solutionImage != "") {
+            document.getElementById("eksami-solution").src = `{% static 'images/' %}${exercises[id].solutionImage}` // Muudab flashcardi teksti
+        }
     }
 
     function toggleSolution() {
@@ -66,7 +69,7 @@
 
     // järgmine ülesanne
     function next() {
-        if (id < Object.keys(exercises).length - 1) { 
+        if (id < Object.keys(exercises).length - 1) {
             id += 1
         } else {
             id = 0
@@ -74,8 +77,8 @@
         displayExercise()
     }
     // eelmine ülesanne
-    function prev() {      
-        if (id > 0) { 
+    function prev() {
+        if (id > 0) {
             id -= 1
         } else {
             id = Object.keys(exercises).length - 1

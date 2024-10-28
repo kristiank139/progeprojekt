@@ -13,12 +13,15 @@
         ul li.user {
             color: rgb(5, 5, 4);
         }
+        #chat-log {
+            padding-top: 30px;
+        }
     </style>
 
 
     <div class="side-sidebar side-bar-block side-card side-animate-right" style="display:none;right:0;" id="rightMenu">
         <button onclick="closeRightMenu()" class="side-bar-item side-button side-large" style="position: fixed; z-index: 1000;">&times;</button>
-        <ul id="chatLog" class="side-bar-item ">
+        <ul id="chat-log" class="side-bar-item ">
             <li class="ai">Tere! Olen PIA. Aitan teid kui vaja :)</li>
         </ul>
         <p2 class="side-bar-item "><input id="prompt" type="text"> <button id="sendPromptButton">Saada</button></p2>
@@ -66,7 +69,7 @@
                     const entry = document.createElement("li");
                     const entry2 = document.createElement("zero-md");
                     entry.appendChild(entry2);
-                    document.getElementById("chatLog").appendChild(entry);
+                    document.getElementById("chat-log").appendChild(entry);
 
 
                     let mdText = encodeURIComponent(this.responseText);
@@ -104,7 +107,7 @@
 
                 newMessage.className = "user";
                 newMessage.textContent = "Kasutaja: " + prompt;
-                document.getElementById("chatLog").appendChild(newMessage);
+                document.getElementById("chat-log").appendChild(newMessage);
 
                 xhttp.send("prompt=" + prompt + "&lname=Ford");
                 document.getElementById("prompt").value = "";
