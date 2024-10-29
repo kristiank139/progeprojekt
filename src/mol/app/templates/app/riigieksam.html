@@ -33,9 +33,8 @@
         showSolution = true;
         toggleSolution();
         document.getElementById("eksami-pealkiri").innerText = `${exercises[id].name}` // Muudab flashcardi pealkirja
-        // puhastab teksti htmli elementidest
-        let safeText = exercises[id].text.replace(/<\/[^>]+(>|$)/g, "");
-        document.getElementById("eksami-yl").innerHTML = safeText.replaceAll("NEWLINE","<div>");
+
+        document.getElementById("eksami-yl").innerHTML = exercises[id].text.replaceAll("NEWLINE","<div>");
 
 
         // Katex renderdamine
