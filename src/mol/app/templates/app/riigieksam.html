@@ -33,7 +33,9 @@
         showSolution = true;
         toggleSolution();
         document.getElementById("eksami-pealkiri").innerText = `${exercises[id].name}` // Muudab flashcardi pealkirja
-        document.getElementById("eksami-yl").innerHTML = exercises[id].text; // Muudab flashcardi teksti
+        // puhastab teksti htmli elementidest
+        let safeText = exercises[id].text.replace(/<\/[^>]+(>|$)/g, "");
+        document.getElementById("eksami-yl").innerHTML = safeText.replaceAll("NEWLINE","<div>");
 
 
         // Katex renderdamine
@@ -50,6 +52,9 @@
         });
         if (exercises[id].figure != "") {
             document.getElementById("eksami-figure").src = `{% static 'images/' %}${exercises[id].figure}` // Muudab flashcardi teksti
+        }
+        else {
+            document.getElementById("eksami-figure").src = "";
         }
         if (exercises[id].solutionImage != "") {
             document.getElementById("eksami-solution").src = `{% static 'images/' %}${exercises[id].solutionImage}` // Muudab flashcardi teksti
